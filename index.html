@@ -1,35 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css"> <!-- Link para o arquivo CSS -->
     <link rel="shourtcut icon" href="./Imagens/Design-sem-nome.ico" type="imagem/x-icon">
+    <!-- Link para o ícone da página -->
     <title>Império dos Bolos, Doces e Salgados</title>
 </head>
+
 <body>
-    
     <header>
-        <h1> Seja bem-vindos a minha confeitaria!</h1>
-        <img src="./banner" alt="">
-        <img class="banner" src="./Imagens/Banner da loja.jpg" alt="banner">
-        <nav>
+        <nav> <!-- Navegação do site -->
+            <div class="logo"> <!-- Div para o logo da loja -->
+                <img src="./Imagens/Logo confeitaria.png" alt="logo">
+            </div>
+
             <a href="./index.html"> Loja </a>
-            <a href="./catalogos.css"> Catálogo </a>
+            <a href="./catalogos.html"> Catálogo </a>
             <a href="./vitrine.html"> Vitrine </a>
             <a href="./sobremim.html"> Sobre mim </a>
         </nav>
     </header>
 
-    <section>
-        
+    <div class="banner">
+        <div class="titulo">
+            <h1>Bem-vindo ao Império dos Bolos, Doces e Salgados!</h1>
+            <p>Delícias que conquistam paladares</p>
+        </div> <!-- Div para a sobreposição do banner -->
+        <img src="./Imagens/Banner da loja.jpg" alt="banner">
+    </div>
+
+
+    <section> <!-- Conteúdo principal -->
+        <h1 class="maisvendidos"> O mais pedidos no momento</h1>
         <main>
-            
+            <div class="produto">
+                <img class="bolos" src="./Imagens/bolo de coco com cobertura de chocolate.jpeg"
+                    alt="Bolo de coco com cobertura de chocolate">
+                <h2 class="nome-produto">Bolo de coco com cobertura de chocolate</h2>
+                <p class="preco">R$ 30,00</p>
+            </div>
+
+            <div class="produto">
+                <img class="bolos" src="./Imagens/bolo de morango personalizado.jpeg"
+                    alt="Bolo de Morango com cobertura de chantilly">
+                <h2 class="nome-produto">Bolo de Morango com cobertura de chantilly</h2>
+                <p class="preco">R$ 45,00</p>
+            </div>
+
+            <div class="produto">
+                <img class="bolos" src="./Imagens/bolo de maracuja.jpeg" alt="Bolo de maracujá">
+                <h2 class="nome-produto">Bolo de maracujá</h2>
+                <p class="preco">R$ 36,00</p>
+            </div>
+
+            <div class="produto">
+                <img class="bolos" src="./Imagens/bolo personalizados.jpeg" alt="Bolo personalizado">
+                <h2 class="nome-produto">Bolo personalizado</h2>
+                <p class="preco">Varia de R$ 50,00 a R$ 1.000,00</p>
+            </div>
+            <div class="produto">
+                <img class="bolos" src="./Imagens/bolo de laranja.jpeg" alt="Bolo de laranja">
+                <h2 class="nome-produto">Bolo de laranja</h2>
+                <p class="preco">R$ 30,00</p>
+            </div>
+            <div class="produto">
+                <img class="bolos" src="./Imagens/bolo de uva.jpeg" alt="Bolo de uva">
+                <h2 class="nome-produto">Bolo de uva</h2>
+                <p class="preco">R$ 40,00</p>
+            </div>
         </main>
     </section>
 
-    <footer>
+
+
+
+    <footer class="rodape">
+          <img class="logorodape" src="./Imagens/Logo confeitaria.png" alt="logo">
+        <p>© 2024 Império dos Bolos, Doces e Salgados. Todos os direitos reservados.</p>
 
     </footer>
 </body>
+
 </html>
