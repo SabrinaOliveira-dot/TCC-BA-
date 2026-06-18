@@ -157,18 +157,26 @@ nav a {
 
 main {
     /* Seleciona o elemento principal da página */
-    display: grid;
+    width: 100%;
     /* Define o layout do elemento principal como bloco */
+    text-align: center;
+    margin-top: 60px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+section{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* Define um layout de grade com 3 colunas de largura igual */
     gap: 40px;
     /* Adiciona um espaço de 20 pixels entre os itens dentro do elemento principal */
     padding: 80px;
     justify-content: center;
-    margin: 50px auto;
-    /* Centraliza os itens dentro do elemento principal horizontalmente */
-    max-width: fit-content;
-    /* Define a largura máxima do elemento principal para se ajustar ao conteúdo */
+    margin: 0px auto;
+  
+ 
 
 }
 
@@ -232,4 +240,5 @@ main {
     margin-bottom: 20px;
     /* Adiciona uma margem inferior de 20 pixels à imagem do logo no rodapé */
 }
+
 
