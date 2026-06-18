@@ -6,3 +6,150 @@
     padding: 0%;
 }
 
+
+
+body {
+    background-color: #692004;
+}
+
+.logo img {
+    width: 140px;
+    /* Define a largura máxima da imagem do logo */
+    border-radius: 50%;
+    /* Adiciona bordas arredondadas à imagem do logo, tornando-a circular */
+    margin: 20px;
+
+}
+
+
+nav {
+    /* Seleciona o elemento de navegação */
+    display: flex;
+    /* Define o layout do elemento de navegação como bloco */
+    background-color: #ffa5b4;
+    /* Define a cor de fundo do elemento de navegação */
+    height: 100px;
+    /* Define a altura do elemento de navegação */
+    width: 100%;
+    /* Define a largura do elemento de navegação para ocupar toda a largura disponível */
+    justify-content: center;
+    /* Centraliza os itens dentro do elemento de navegação horizontalmente */
+    align-items: center;
+    gap: 20px;
+    padding: 70px;
+    /* Adiciona um preenchimento de 10 pixels ao redor do conteúdo do elemento de navegação */
+
+}
+
+nav a {
+    /* Seleciona todos os elementos de link dentro do elemento de navegação */
+    display: flex;
+    /* Define o layout dos links como bloco em linha */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    background-color: #692004;
+    /* Define a cor de fundo dos links como rosa */
+    color: #ffffff;
+    /* Define a cor do texto dos links como branco */
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 15px;
+    font-style: normal;
+
+    margin: 0 20px;
+    /* Adiciona uma margem horizontal de 10 pixels entre os links */
+    font-family: 'Arial', sans-serif;
+    /* Define a fonte do texto dos links como Arial, com uma fonte de fallback sans-serif */
+    font-size: 18px;
+    /* Define o tamanho da fonte dos links */
+    border: 2px solid #692004;
+    /* Adiciona uma borda sólida de 2 pixels ao redor dos links, com a cor marrom */
+    padding: 10px 50px;
+    /* Adiciona um preenchimento de 10 pixels na parte superior e inferior, e 20 pixels nas laterais dos links */
+    border-radius: 60px;
+    /* Adiciona bordas arredondadas aos links */
+}
+
+
+
+
+main {
+     /*Seleciona o elemento principal da página*/ 
+    display: grid;
+    /* Define o layout do elemento principal como bloco */
+    grid-template-columns: repeat( 1fr);
+    /* Define um layout de grade com 3 colunas de largura igual */
+    gap: 40px;
+    /* Adiciona um espaço de 20 pixels entre os itens dentro do elemento principal*/ 
+    padding: 80px;
+    justify-content: center;
+    margin: 50px auto;
+    /* Centraliza os itens dentro do elemento principal horizontalmente */
+    max-width: fit-content;
+    /* Define a largura máxima do elemento principal para se ajustar ao conteúdo */
+ 
+} 
+
+.salgadinhos {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    display: block;
+    /* Define o layout do elemento de produto como bloco */
+
+}
+.salgados{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.produto{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    
+    background-color: #692004;
+}
+
+.nome-produto {
+    font-size: 26px;
+    /* Define o tamanho da fonte do nome do produto */
+    color: #692004;
+    /* Define a cor do texto do nome do produto como marrom */
+    margin-top: 10px;
+    /* Adiciona uma margem superior de 10 pixels ao nome do produto */
+}
+
+
+
+.rodape{
+    background-color: #ffa5b4;
+    /* Define a cor de fundo do rodapé como marrom */
+    color: #ffffff;
+    /* Define a cor do texto do rodapé como branco */
+    text-align: center;
+    /* Centraliza o texto dentro do rodapé */
+    padding: 20px;
+    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo do rodapé */
+    height: 420px;
+    padding-top: 150px;
+     /* Adiciona um preenchimento superior de 20 pixels ao rodapé */
+}
+
+.logorodape {
+    width: 200px;
+    /* Define a largura máxima da imagem do logo no rodapé */
+    border-radius: 50%;
+    /* Adiciona bordas arredondadas à imagem do logo no rodapé, tornando-a circular */
+    margin-bottom: 20px;
+    /* Adiciona uma margem inferior de 20 pixels à imagem do logo no rodapé */
+}
+
