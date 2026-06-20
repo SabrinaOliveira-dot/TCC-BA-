@@ -109,6 +109,14 @@ h1{
     /* Define o layout do elemento de produto como bloco */
 
 }
+
+
+.gelinhos:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}/* Adiciona um efeito de transição suave ao transformar o item quando o mouse passa sobre ele */
+
+
 .produtos{
     display: grid;
     grid-template-columns: repeat(3, 300px);

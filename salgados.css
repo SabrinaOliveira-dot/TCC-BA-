@@ -116,6 +116,10 @@ h1{
     justify-content: center;
 }
 
+.salgadinhos:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}/* Adiciona um efeito de transição suave ao transformar o item quando o mouse passa sobre ele */
 .opcoes{
     display: flex;
     flex-wrap: wrap;

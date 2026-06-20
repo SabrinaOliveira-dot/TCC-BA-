@@ -90,7 +90,7 @@ main {
     justify-content: center;
     margin: 50px auto;
     /* Centraliza os itens dentro do elemento principal horizontalmente */
-    max-width: fit-content;
+    
     /* Define a largura máxima do elemento principal para se ajustar ao conteúdo */
  
 } 
@@ -106,16 +106,23 @@ h1{
     padding: 15px;
     border-radius: 10px;
     height: 400px;
-    width: 300px;
+    width: 300%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     display: block;
     /* Define o layout do elemento de produto como bloco */
 
 }
-.produtos{
-    display: flex;
-    flex-wrap: wrap;
+
+
+.produto:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}/* Adiciona um efeito de transição suave ao transformar o item quando o mouse passa sobre ele */
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
     gap: 30px;
     justify-content: center;
 }
@@ -163,3 +170,70 @@ h1{
     /* Adiciona uma margem inferior de 20 pixels à imagem do logo no rodapé */
 }
 
+/* RESPONSIVIDADE PARA CELULAR */
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 100px;
+        margin: 10px;
+    }
+
+    nav a {
+        width: 90%;
+        justify-content: center;
+        margin: 0;
+        padding: 12px;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .produto {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .catalogos {
+        justify-content: center;
+    }
+
+    .rodape {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .logorodape {
+        width: 80px;
+        margin: 10px;
+    }
+
+    .nome-produto {
+        font-size: 22px;
+        text-align: center;
+    }
+
+
+
+    
+
+}
