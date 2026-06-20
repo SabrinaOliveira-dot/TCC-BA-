@@ -29,6 +29,7 @@ body {
     /* Define a posição do elemento de banner como relativa, permitindo que o pseudo-elemento ::after seja posicionado em relação a ele */
     margin-top: 20px;
     /* Adiciona uma margem superior de 20 pixels ao elemento de banner */
+    min-height: 100vh;
 }
 
 .banner img {
@@ -36,7 +37,7 @@ body {
     /* Define o layout do elemento de banner como bloco */
     width: 100%;
     /* Define a largura da imagem do banner para ocupar toda a largura disponível */
-    height: 600px;
+    height: 100vh;
     margin-top: 20px;
     object-fit: cover;
     /* Garante que a imagem do banner preencha completamente a área designada, cortando partes se necessário para manter a proporção */
@@ -62,35 +63,30 @@ body {
 }
 
 .titulo h1 {
-    position: absolute;
-    /* Define a posição do elemento de título como absoluta, permitindo que ele seja posicionado em relação ao elemento de banner */
+   position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Centraliza o elemento de título tanto vertical quanto horizontalmente dentro do elemento de banner */
     color: #ffffff;
-    /* Define a cor do texto do título como branco */
-    font-size: 50px;
-    /* Define o tamanho da fonte do título */
+    font-size: clamp(28px, 5vw, 50px);
     z-index: 2;
-    /* Define a posição do elemento de título acima do pseudo-elemento ::after */
+    text-align: center;
+    width: 90%;
 }
 
 .titulo p {
-    position: absolute;
-    /* Define a posição do elemento de parágrafo como absoluta, permitindo que ele seja posicionado em relação ao elemento de banner */
-    padding-top: 50px;
+      position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Centraliza o elemento de parágrafo tanto vertical quanto horizontalmente dentro do elemento de banner, um pouco abaixo do título */
     color: #ffffff;
-    /* Define a cor do texto do parágrafo como branco */
-    font-size: 26px;
-    /* Define o tamanho da fonte do parágrafo */
+    font-size: clamp(16px, 3vw, 26px);
     z-index: 2;
-    /* Define a posição do elemento de parágrafo acima do pseudo-elemento ::after */
+    text-align: center;
+    width: 90%;
+    padding-top: 20px;
 }
+
 
 nav {
     /* Seleciona o elemento de navegação */
@@ -98,15 +94,14 @@ nav {
     /* Define o layout do elemento de navegação como bloco */
     background-color: #ffa5b4;
     /* Define a cor de fundo do elemento de navegação */
-    height: 100px;
-    /* Define a altura do elemento de navegação */
-    width: 100%;
-    /* Define a largura do elemento de navegação para ocupar toda a largura disponível */
+    flex-wrap: wrap;
     justify-content: center;
     /* Centraliza os itens dentro do elemento de navegação horizontalmente */
     align-items: center;
-    gap: 20px;
-    padding: 70px;
+    width: 100%;
+    /* Define a largura do elemento de navegação para ocupar toda a largura disponível */
+    gap: 15px;
+    padding: 20px;
     /* Adiciona um preenchimento de 10 pixels ao redor do conteúdo do elemento de navegação */
 
 }
@@ -121,12 +116,10 @@ nav a {
     /* Define a cor de fundo dos links como rosa */
     color: #ffffff;
     /* Define a cor do texto dos links como branco */
-
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 15px;
     font-style: normal;
-
     margin: 0 20px;
     /* Adiciona uma margem horizontal de 10 pixels entre os links */
     font-family: 'Arial', sans-serif;
@@ -144,7 +137,7 @@ nav a {
 .maisvendidos {
     display: flex;
     /* Define o layout do elemento de mais vendidos como bloco */
-    margin-top: 200px;
+    margin: 60px 0;
     color: #ffa5b4;
     /* Adiciona uma margem superior de 20 pixels ao elemento de mais vendidos */
     justify-content: center;
@@ -166,31 +159,26 @@ main {
 }
 
 
-section{
+section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* Define um layout de grade com 3 colunas de largura igual */
     gap: 40px;
     /* Adiciona um espaço de 20 pixels entre os itens dentro do elemento principal */
-    padding: 80px;
-    justify-content: center;
-    margin: 0px auto;
-  
- 
+    padding: 40px;
 
 }
 
 .produto {
+    display: block;
     background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
-    height: 490px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 490px;
+    width: 100%;
     max-width: 300px;
-    display: block;
-    /* Define o layout do elemento de produto como bloco */
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 
@@ -218,27 +206,61 @@ section{
     /* Adiciona uma margem superior de 5 pixels ao preço do produto */
 }
 
-.rodape{
+.rodape {
+    display: flex;
     background-color: #ffa5b4;
-    /* Define a cor de fundo do rodapé como marrom */
     color: #ffffff;
-    /* Define a cor do texto do rodapé como branco */
     text-align: center;
-    /* Centraliza o texto dentro do rodapé */
-    padding: 20px;
-    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo do rodapé */
-    height: 420px;
-    padding-top: 150px;
-     /* Adiciona um preenchimento superior de 20 pixels ao rodapé */
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.logorodape-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
 
 .logorodape {
-    width: 200px;
+    width: 380px;
     /* Define a largura máxima da imagem do logo no rodapé */
+    height: auto;
+    /* Define a altura máxima da imagem do logo no rodapé */
     border-radius: 50%;
     /* Adiciona bordas arredondadas à imagem do logo no rodapé, tornando-a circular */
-    margin-bottom: 20px;
-    /* Adiciona uma margem inferior de 20 pixels à imagem do logo no rodapé */
 }
 
 
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contato-titulo {
+    font-size: 24px;
+    color: #692004;
+    /* Define a cor do texto do título de contato no rodapé como branco */
+}
+
+.iconerodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.iconerodape img {
+    width: 50px;
+    /* Define a largura máxima das imagens dos ícones do rodapé */
+    height: auto;
+    /* Define a altura máxima das imagens dos ícones do rodapé */
+    cursor: pointer;
+    /* Adiciona um cursor de ponteiro ao passar o mouse sobre as imagens dos ícones do rodapé, indicando que são clicáveis */
+
+}
