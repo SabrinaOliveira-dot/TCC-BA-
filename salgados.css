@@ -91,6 +91,12 @@ main {
  
 } 
 
+h1{
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+
 .salgadinhos {
     background-color: #ffffff;
     padding: 15px;
@@ -101,16 +107,16 @@ main {
     max-width: 300px;
     display: block;
     /* Define o layout do elemento de produto como bloco */
-
+    gap: 40px;
 }
-.salgados{
-    display: flex;
-    flex-wrap: wrap;
+.produtos {
+   display: grid;
+    grid-template-columns: repeat(3, 300px);
     gap: 30px;
     justify-content: center;
 }
 
-.produto{
+.opcoes{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
