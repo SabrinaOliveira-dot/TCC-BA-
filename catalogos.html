@@ -10,18 +10,24 @@
     <title>Império dos Bolos, Doces e Salgados</title>
 </head>
 
-<body>
-    <header>
+ <header>
         <nav> <!-- Navegação do site -->
             <div class="logo"> <!-- Div para o logo da loja -->
                 <img src="./Imagens/Logo confeitaria.png" alt="logo">
             </div>
 
+            <div class="links">
             <a href="./index.html"> Loja </a>
             <a href="./catalogos.html"> Catálogo </a>
             <a href="./vitrine.html"> Vitrine </a>
             <a href="./sobremim.html"> Sobre mim </a>
+            </div>
+
+            <a href="https://wa.me/558191528525" target="_blank" class="carrinho-botao">
+                <img src="./Imagens/carrinho.png" alt="Carrinho" class="carrinho-icone"> <span id="contador-carrinho">0</span>
+            </a>
         </nav>
+    </div>
     </header>
 
     <main> <!-- Conteúdo principal -->
@@ -73,12 +79,37 @@
 
 
 
-    <footer class="rodape">
-          <img class="logorodape" src="./Imagens/Logo confeitaria.png" alt="logo">
-          <img class="logorodape" src="./Imagens/whatsapp.png" alt="whatsapp">
-          <img class="logorodape" src="./Imagens/instagram.png" alt="instagram">
+   <footer class="rodape"> <!--É a barra do meu rodapé-->
 
-        <p>© 2024 Império dos Bolos, Doces e Salgados. Todos os direitos reservados.</p>
+        <div class="logorodape-principal"> <!--Essa aqui é da minha barra-->
+            <img class="logorodape" src="./Imagens/Logo confeitaria.png" alt="logo">
+        </div>
+
+        <div class="contato"> <!--aqui é do meu titulo-->
+            <h3 class="contato-titulo">Entre em contato</h3>
+
+            <div class="item-contato">
+                <img src="./Imagens/whatsapp.png" alt="WhatsApp">
+                <p> (81) 9152-8525</p>
+            </div>
+
+            <div class="item-contato">
+                <img src="./Imagens/instagram.png" alt="Instagram">
+                <p>@imperiodosbolos</p>
+            </div>
+
+            <div class="item-contato">
+                <img src="./Imagens/mapa.png" alt="Localização">
+                <p>Rua Exemplo, 123 - Santo André, SP</p>
+            </div>
+        </div>
+
+        <div class="horarios">
+            <h3 class="atendimento-titulo">Horário de atendimento</h3>
+            <p>Segunda a Sexta: 08:00 - 18:00</p>
+            <p>Sábado: 08:00 - 14:00</p>
+            <p>Domingo: Fechado</p>
+        </div>
     </footer>
 </body>
 
