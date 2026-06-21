@@ -61,6 +61,8 @@ nav a {
     display: flex;
     justify-content: center;
     flex-grow: 1; /* Faz esse bloco ocupar o meio do menu */
+    flex-wrap:wrap;
+    gap:10px;
 }
 
 /* Aplica o estilo de botão redondo apenas aos links das seções */
@@ -115,14 +117,18 @@ main {
      /*Seleciona o elemento principal da página*/ 
     display: grid;
     /* Define o layout do elemento principal como bloco */
-    grid-template-columns: repeat( 1fr);
+    padding: 40px 20px;
+    margin: 0 auto;
+    
+    width: 100%;
+    max-width: 100%;
+    
+
     /* Define um layout de grade com 3 colunas de largura igual */
     gap: 40px;
-    /* Adiciona um espaço de 20 pixels entre os itens dentro do elemento principal*/ 
-    padding: 80px;
+    /* Adiciona um espaço de 20 pixels entre os itens dentro do elemento principal*/
     justify-content: center;
-    margin: 50px auto;
-    /* Centraliza os itens dentro do elemento principal horizontalmente */
+
     
     /* Define a largura máxima do elemento principal para se ajustar ao conteúdo */
  
@@ -134,39 +140,52 @@ h1{
     justify-content: center;
 }
 
+
 .produto {
-    background-color: #ffffff;
+    background-color: #fff;
+    border-radius: 12px;
     padding: 15px;
-    border-radius: 10px;
-    height: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    display: block;
-    /* Define o layout do elemento de produto como bloco */
+
 
 }
 
 
 .produto:hover{
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
 }/* Adiciona um efeito de transição suave ao transformar o item quando o mouse passa sobre ele */
 
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
 .produtos {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .catalogos{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-around;
-    
+    justify-content: center;
+    padding: 40px 20px;
+    width: 100%;
     background-color: #692004;
 }
 
@@ -368,4 +387,16 @@ h1{
 
     
 
+}
+
+@media screen and (max-width: 900px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .produtos {
+        grid-template-columns: 1fr;
+    }
 }
