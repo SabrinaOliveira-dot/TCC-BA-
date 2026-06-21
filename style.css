@@ -4,18 +4,17 @@
 * {
     /* Seleção universal para aplicar as seguintes regras a todos os elementos da página */
     box-sizing: border-box;
-    /* Define o modelo de caixa para incluir bordas e preenchimento no cálculo do tamanho total do elemento */
     margin: 0%;
-    /* Remove as margens padrão de todos os elementos */
     padding: 0%;
-    /* Remove o preenchimento padrão de todos os elementos */
 }
 
 body {
+    /* Seleciona o elemento de corpo da página */
     background-color: #692004;
 }
 
 .logo img {
+    /* Seleciona a imagem dentro do elemento com a classe "logo" */
     width: 140px;
     /* Define a largura máxima da imagem do logo */
     border-radius: 50%;
@@ -23,31 +22,39 @@ body {
     margin: 20px;
 
 }
-
 .banner {
     position: relative;
-    /* Define a posição do elemento de banner como relativa, permitindo que o pseudo-elemento ::after seja posicionado em relação a ele */
     margin-top: 20px;
-    /* Adiciona uma margem superior de 20 pixels ao elemento de banner */
     min-height: 100vh;
 }
+.container-onda {
+    position: absolute;
+    bottom: 0;         /* Cola o container estritamente no fim do banner */
+    left: 0;
+    width: 100%;
+    line-height: 0;    /* Elimina espaços residuais de renderização */
+    z-index: 3;
+}
 
+.container-onda svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Inverte o SVG usando a base inferior como o eixo correto */
+    transform: scaleY(-1);
+    transform-origin: bottom;
+}
 .banner img {
     display: block;
-    /* Define o layout do elemento de banner como bloco */
     width: 100%;
-    /* Define a largura da imagem do banner para ocupar toda a largura disponível */
     height: 100vh;
     margin-top: 20px;
     object-fit: cover;
-    /* Garante que a imagem do banner preencha completamente a área designada, cortando partes se necessário para manter a proporção */
     border-radius: 10px;
-    /* Adiciona bordas arredondadas à imagem do banner */
 }
 
 .banner::after {
     content: "";
-    /* Cria um pseudo-elemento vazio após o elemento de banner */
     position: absolute;
     top: 0;
     left: 0;
@@ -55,15 +62,10 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    /* Define a posição do pseudo-elemento como relativa */
-    display: block;
-    /* Define o pseudo-elemento como um bloco */
-    clear: both;
-    /* Limpa qualquer flutuação anterior, garantindo que o pseudo-elemento fique abaixo do conteúdo flutuante */
 }
-
 .titulo h1 {
-   position: absolute;
+    /* Seleciona o elemento de título dentro do elemento com a classe "titulo" */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -75,7 +77,8 @@ body {
 }
 
 .titulo p {
-      position: absolute;
+    /* Seleciona o elemento de parágrafo dentro do elemento com a classe "titulo" */
+    position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -89,7 +92,7 @@ body {
 
 
 nav {
-    /* Seleciona o elemento de navegação */
+    /* Seleciona o elemento de navegação da página */
     display: flex;
     /* Define o layout do elemento de navegação como bloco */
     background-color: #ffa5b4;
@@ -135,6 +138,7 @@ nav a {
 }
 
 .maisvendidos {
+    /* Seleciona o elemento com a classe "maisvendidos" */
     display: flex;
     /* Define o layout do elemento de mais vendidos como bloco */
     margin: 60px 0;
@@ -150,6 +154,7 @@ nav a {
 
 main {
     /* Seleciona o elemento principal da página */
+    /* Seleciona o elemento principal da página */
     width: 100%;
     /* Define o layout do elemento principal como bloco */
     text-align: center;
@@ -160,6 +165,7 @@ main {
 
 
 section {
+    /* Seleciona o elemento de seção dentro do elemento principal */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* Define um layout de grade com 3 colunas de largura igual */
@@ -170,6 +176,7 @@ section {
 }
 
 .produto {
+    /* Seleciona o elemento com a classe "produto" dentro do elemento de seção */
     display: block;
     background-color: #ffffff;
     padding: 15px;
@@ -183,12 +190,14 @@ section {
 
 
 .bolos {
+    /* Seleciona o elemento com a classe "bolos" dentro do elemento de produto */
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
 .nome-produto {
+    /* Seleciona o elemento com a classe "nome-produto" dentro do elemento de produto */
     font-size: 26px;
     /* Define o tamanho da fonte do nome do produto */
     color: #692004;
@@ -198,6 +207,7 @@ section {
 }
 
 .preco {
+    /* Seleciona o elemento com a classe "preco" dentro do elemento de produto */
     font-size: 18px;
     /* Define o tamanho da fonte do preço do produto */
     color: #692004;
@@ -207,24 +217,30 @@ section {
 }
 
 .rodape {
+    /* Seleciona o elemento com a classe "rodape" */
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    /* Mudado para center para alinhar o logo, contatos e horários perfeitamente pelo meio */
+    gap: 60px;
     background-color: #ffa5b4;
-    color: #ffffff;
     text-align: center;
-    padding: 10px 20px;
-    flex-direction: column;
-    gap: 20px;
+    padding: 40px 60px;
 
 }
 
 .logorodape-principal {
+    /* Seleciona o elemento com a classe "logorodape-principal" dentro do elemento de rodapé */
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    flex-shrink: 0;
 }
 
 .logorodape {
+    /* Seleciona o elemento com a classe "logorodape" dentro do elemento de rodapé */
     width: 380px;
     /* Define a largura máxima da imagem do logo no rodapé */
     height: auto;
@@ -236,31 +252,57 @@ section {
 
 
 .contato {
+    /* Seleciona o elemento com a classe "contato" dentro do elemento de rodapé */
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
 }
 
 .contato-titulo {
+    /* Seleciona o elemento com a classe "contato-titulo" dentro do elemento de contato */
     font-size: 24px;
     color: #692004;
     /* Define a cor do texto do título de contato no rodapé como branco */
 }
 
-.iconerodape {
+.item-contato {
+    /* Seleciona o elemento com a classe "item-contato" dentro do elemento de contato */
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 12px;
 }
 
-.iconerodape img {
-    width: 50px;
-    /* Define a largura máxima das imagens dos ícones do rodapé */
-    height: auto;
-    /* Define a altura máxima das imagens dos ícones do rodapé */
-    cursor: pointer;
-    /* Adiciona um cursor de ponteiro ao passar o mouse sobre as imagens dos ícones do rodapé, indicando que são clicáveis */
+.item-contato img {
+    width: 80px;
+    height: 50px;
+    object-fit: contain;
+}
 
+.item-contato p {
+    margin: 0;
+    font-size: 18px;
+    color: #692004;
+    line-height: 1.2;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 12px;
+    color: #692004;
+}
+
+.horarios p {
+    margin: 0;
+    font-size: 18px;
+    color: #692004;
+    line-height: 1.2;
+}
+
+.atendimento-titulo {
+    /* Seleciona o elemento com a classe "contato-titulo" dentro do elemento de contato */
+    font-size: 24px;
+    color: #692004;
+    /* Define a cor do texto do título de contato no rodapé como branco */
 }
