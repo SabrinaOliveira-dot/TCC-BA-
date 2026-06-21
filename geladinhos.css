@@ -22,21 +22,12 @@ body {
 
 
 nav {
-    /* Seleciona o elemento de navegação */
-    display: flex;
-    /* Define o layout do elemento de navegação como bloco */
+     display: flex;
     background-color: #ffa5b4;
-    /* Define a cor de fundo do elemento de navegação */
-    height: 100px;
-    /* Define a altura do elemento de navegação */
-    width: 100%;
-    /* Define a largura do elemento de navegação para ocupar toda a largura disponível */
-    justify-content: center;
-    /* Centraliza os itens dentro do elemento de navegação horizontalmente */
+    justify-content: space-between; /* Distribui os 3 blocos: logo na esquerda, links no meio, carrinho na direita */
     align-items: center;
-    gap: 20px;
-    padding: 70px;
-    /* Adiciona um preenchimento de 10 pixels ao redor do conteúdo do elemento de navegação */
+    padding: 0 40px; /* Dá uma folga nas laterais da barra */
+    flex-wrap: nowrap; /* Impede que os elementos quebrem de linha */
 
 }
 
