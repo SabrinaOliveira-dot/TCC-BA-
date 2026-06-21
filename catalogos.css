@@ -139,7 +139,8 @@ h1{
     padding: 15px;
     border-radius: 10px;
     height: 400px;
-    width: 300%;
+
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     display: block;
@@ -180,98 +181,6 @@ h1{
 
 
 
-.rodape{
-    background-color: #ffa5b4;
-    /* Define a cor de fundo do rodapé como marrom */
-    color: #ffffff;
-    /* Define a cor do texto do rodapé como branco */
-    text-align: center;
-    /* Centraliza o texto dentro do rodapé */
-    padding: 20px;
-    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo do rodapé */
-    height: 420px;
-    padding-top: 150px;
-     /* Adiciona um preenchimento superior de 20 pixels ao rodapé */
-}
-
-.logorodape {
-    width: 200px;
-    /* Define a largura máxima da imagem do logo no rodapé */
-    border-radius: 50%;
-    /* Adiciona bordas arredondadas à imagem do logo no rodapé, tornando-a circular */
-    margin-bottom: 20px;
-    /* Adiciona uma margem inferior de 20 pixels à imagem do logo no rodapé */
-}
-
-/* RESPONSIVIDADE PARA CELULAR */
-@media screen and (max-width: 768px) {
-
-    nav {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        gap: 15px;
-    }
-
-    .logo img {
-        width: 100px;
-        margin: 10px;
-    }
-
-    nav a {
-        width: 90%;
-        justify-content: center;
-        margin: 0;
-        padding: 12px;
-    }
-
-    main {
-        padding: 20px;
-        margin: 20px auto;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    .produtos {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .produto {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
-        height: auto;
-    }
-
-    .catalogos {
-        justify-content: center;
-    }
-
-    .rodape {
-        height: auto;
-        padding: 40px 20px;
-    }
-
-    .logorodape {
-        width: 80px;
-        margin: 10px;
-    }
-
-    .nome-produto {
-        font-size: 22px;
-        text-align: center;
-    }
-
-
-
-    
-
-}
-
-
 .rodape {
     /* Seleciona o elemento com a classe "rodape" */
     display: flex;
@@ -281,6 +190,7 @@ h1{
     /* Mudado para center para alinhar o logo, contatos e horários perfeitamente pelo meio */
     gap: 60px;
     background-color: #ffa5b4;
+   
     text-align: center;
     padding: 40px 60px;
 
@@ -359,4 +269,103 @@ h1{
     font-size: 24px;
     color: #692004;
     /* Define a cor do texto do título de contato no rodapé como branco */
+}
+
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        width: 100px;
+        margin: 10px;
+    }
+
+    nav a {
+        width: 90%;
+        justify-content: center;
+        margin: 0;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .produto {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .catalogos {
+        justify-content: center;
+    }
+
+
+    .nome-produto {
+        font-size: 22px;
+        text-align: center;
+    }
+
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .logorodape-principal,
+    .contato,
+    .horarios {
+        width: 100%;
+        align-items: center;
+    }
+
+    .logorodape {
+        width: 120px;
+    }
+
+    .item-contato {
+        justify-content: center;
+    }
+
+    .item-contato img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contato-titulo,
+    .atendimento-titulo {
+        font-size: 20px;
+    }
+
+    .item-contato p,
+    .horarios p {
+        font-size: 16px;
+    }
+
+    
+
 }

@@ -98,18 +98,26 @@ h1{
     justify-content: center;
 }
 
+
 .salgadinhos {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 15px;
     border-radius: 10px;
-    height: 400px;
+
     width: 100%;
     max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    display: block;
-    /* Define o layout do elemento de produto como bloco */
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+.salgadinhos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 .produtos {
     display: flex;
@@ -151,35 +159,94 @@ h1{
 
 
 
-.rodape{
+.rodape {
+    /* Seleciona o elemento com a classe "rodape" */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Mudado para center para alinhar o logo, contatos e horários perfeitamente pelo meio */
+    gap: 60px;
     background-color: #ffa5b4;
-    /* Define a cor de fundo do rodapé como marrom */
-    color: #ffffff;
-    /* Define a cor do texto do rodapé como branco */
+   
     text-align: center;
-    /* Centraliza o texto dentro do rodapé */
-    padding: 40px 20px;
-    /* Adiciona um preenchimento de 20 pixels ao redor do conteúdo do rodapé */
-    height: 420px;
-    padding-top: 150px;
-     /* Adiciona um preenchimento superior de 20 pixels ao rodapé */
-    border-top: 4px solid #692004;
+    padding: 40px 60px;
+
+}
+
+.logorodape-principal {
+    /* Seleciona o elemento com a classe "logorodape-principal" dentro do elemento de rodapé */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
 }
 
 .logorodape {
-    width: 100px;
+    /* Seleciona o elemento com a classe "logorodape" dentro do elemento de rodapé */
+    width: 200px;
     /* Define a largura máxima da imagem do logo no rodapé */
+    height: auto;
+    /* Define a altura máxima da imagem do logo no rodapé */
     border-radius: 50%;
     /* Adiciona bordas arredondadas à imagem do logo no rodapé, tornando-a circular */
-    margin-bottom: 15px;
-    /* Adiciona uma margem inferior de 20 pixels à imagem do logo no rodapé */
 }
 
 
 
-.redes img{
-    width: 60px;
-    margin: 0 10px;
+.contato {
+    /* Seleciona o elemento com a classe "contato" dentro do elemento de rodapé */
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-titulo {
+    /* Seleciona o elemento com a classe "contato-titulo" dentro do elemento de contato */
+    font-size: 24px;
+    color: #692004;
+    /* Define a cor do texto do título de contato no rodapé como branco */
+}
+
+.item-contato {
+    /* Seleciona o elemento com a classe "item-contato" dentro do elemento de contato */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-contato img {
+    width: 80px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.item-contato p {
+    font-size: 18px;
+    color: #692004;
+    line-height: 1.2;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    color: #692004;
+}
+
+.horarios p {
+    margin: 0;
+    font-size: 18px;
+    color: #692004;
+    line-height: 1.2;
+}
+
+.atendimento-titulo {
+    /* Seleciona o elemento com a classe "contato-titulo" dentro do elemento de contato */
+    font-size: 24px;
+    color: #692004;
+    /* Define a cor do texto do título de contato no rodapé como branco */
 }
 
 
@@ -232,20 +299,50 @@ h1{
         justify-content: center;
     }
 
-    .rodape {
-        height: auto;
-        padding: 40px 20px;
-    }
-
-    .logorodape {
-        width: 100%;
-    }
 
     .nome-produto {
         font-size: 22px;
         text-align: center;
     }
 
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .logorodape-principal,
+    .contato,
+    .horarios {
+        width: 100%;
+        align-items: center;
+    }
+
+    .logorodape {
+        width: 120px;
+    }
+
+    .item-contato {
+        justify-content: center;
+    }
+
+    .item-contato img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contato-titulo,
+    .atendimento-titulo {
+        font-size: 20px;
+    }
+
+    .item-contato p,
+    .horarios p {
+        font-size: 16px;
+    }
 
     
 
