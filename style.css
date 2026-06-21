@@ -15,40 +15,112 @@ body {
 
 .logo img {
     /* Seleciona a imagem dentro do elemento com a classe "logo" */
-    width: 140px;
+    width: 200px;
     /* Define a largura máxima da imagem do logo */
     border-radius: 50%;
     /* Adiciona bordas arredondadas à imagem do logo, tornando-a circular */
     margin: 20px;
 
 }
-.banner {
-    position: relative;
-    margin-top: 20px;
-    min-height: 100vh;
-}
-.container-onda {
-    position: absolute;
-    bottom: 0;         /* Cola o container estritamente no fim do banner */
-    left: 0;
-    width: 100%;
-    line-height: 0;    /* Elimina espaços residuais de renderização */
-    z-index: 3;
+
+nav {
+    display: flex;
+    background-color: #ffa5b4;
+    justify-content: space-between; /* Distribui os 3 blocos: logo na esquerda, links no meio, carrinho na direita */
+    align-items: center;
+    padding: 0 40px; /* Dá uma folga nas laterais da barra */
+    flex-wrap: nowrap; /* Impede que os elementos quebrem de linha */
 }
 
-.container-onda svg {
-    display: block;
-    width: 100%;
-    height: auto;
-    /* Inverte o SVG usando a base inferior como o eixo correto */
-    transform: scaleY(-1);
-    transform-origin: bottom;
+nav a {
+    /* Seleciona todos os elementos de link dentro do elemento de navegação */
+    display: flex;
+    /* Define o layout dos links como bloco em linha */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    background-color: #692004;
+    /* Define a cor de fundo dos links como rosa */
+    color: #ffffff;
+    /* Define a cor do texto dos links como branco */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 15px;
+    font-style: normal;
+    margin: 0 20px;
+    font-size: 18px;
+    /* Define o tamanho da fonte dos links */
+    border: 2px solid #692004;
+    /* Adiciona uma borda sólida de 2 pixels ao redor dos links, com a cor marrom */
+    padding: 10px 50px;
+    /* Adiciona um preenchimento de 10 pixels na parte superior e inferior, e 20 pixels nas laterais dos links */
+    border-radius: 60px;
+    /* Adiciona bordas arredondadas aos links */
 }
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Faz esse bloco ocupar o meio do menu */
+}
+
+/* Aplica o estilo de botão redondo apenas aos links das seções */
+.links a {
+    text-decoration: none;
+    background-color: #692004;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    border: 2px solid #692004;
+    padding: 10px 50px;
+    border-radius: 60px;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+/* Estrutura do botão do carrinho no canto direito */
+.carrinho-botao {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.carrinho-icone {
+    width: 45px; /* Tamanho controlado do ícone */
+    height: auto;
+}
+
+/* Círculo com o número da quantidade que sobe ao clicar */
+#contador-carrinho {
+    position: absolute;
+    top: 0px;
+    right: -2px;
+    background-color: #692004; /* Cor escura padrão da sua paleta */
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 7px;
+    min-width: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+}
+
+
+
 .banner img {
     display: block;
     width: 100%;
     height: 100vh;
-    margin-top: 20px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -63,6 +135,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .titulo h1 {
     /* Seleciona o elemento de título dentro do elemento com a classe "titulo" */
     position: absolute;
@@ -91,51 +164,28 @@ body {
 }
 
 
-nav {
-    /* Seleciona o elemento de navegação da página */
-    display: flex;
-    /* Define o layout do elemento de navegação como bloco */
-    background-color: #ffa5b4;
-    /* Define a cor de fundo do elemento de navegação */
-    flex-wrap: wrap;
-    justify-content: center;
-    /* Centraliza os itens dentro do elemento de navegação horizontalmente */
-    align-items: center;
+.container-onda {
+    position: absolute;
+    bottom: 0;
+    /* Cola o container estritamente no fim do banner */
+    left: 0;
     width: 100%;
-    /* Define a largura do elemento de navegação para ocupar toda a largura disponível */
-    gap: 15px;
-    padding: 20px;
-    /* Adiciona um preenchimento de 10 pixels ao redor do conteúdo do elemento de navegação */
-
+    line-height: 0;
+    /* Elimina espaços residuais de renderização */
+    z-index: 3;
 }
 
-nav a {
-    /* Seleciona todos os elementos de link dentro do elemento de navegação */
-    display: flex;
-    /* Define o layout dos links como bloco em linha */
-    text-decoration: none;
-    /* Remove o sublinhado dos links */
-    background-color: #692004;
-    /* Define a cor de fundo dos links como rosa */
-    color: #ffffff;
-    /* Define a cor do texto dos links como branco */
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 15px;
-    font-style: normal;
-    margin: 0 20px;
-    /* Adiciona uma margem horizontal de 10 pixels entre os links */
-    font-family: 'Arial', sans-serif;
-    /* Define a fonte do texto dos links como Arial, com uma fonte de fallback sans-serif */
-    font-size: 18px;
-    /* Define o tamanho da fonte dos links */
-    border: 2px solid #692004;
-    /* Adiciona uma borda sólida de 2 pixels ao redor dos links, com a cor marrom */
-    padding: 10px 50px;
-    /* Adiciona um preenchimento de 10 pixels na parte superior e inferior, e 20 pixels nas laterais dos links */
-    border-radius: 60px;
-    /* Adiciona bordas arredondadas aos links */
+.container-onda svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* ADICIONE OU COMPLEMENTE AS LINHAS ABAIXO: */
+    max-height: 450px;
+    /* Altere este valor (ex: 200px, 150px) até achar o tamanho ideal */
+    transform: scaleY(-1);
+    transform-origin: bottom;
 }
+
 
 .maisvendidos {
     /* Seleciona o elemento com a classe "maisvendidos" */
@@ -150,6 +200,7 @@ nav a {
     font-size: 40px;
     gap: 20px;
     /* Adiciona um espaço de 20 pixels entre os itens dentro do elemento de mais vendidos */
+    margin-top: 230px;
 }
 
 main {
@@ -172,7 +223,6 @@ section {
     gap: 40px;
     /* Adiciona um espaço de 20 pixels entre os itens dentro do elemento principal */
     padding: 40px;
-
 }
 
 .produto {
@@ -221,7 +271,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
     /* Mudado para center para alinhar o logo, contatos e horários perfeitamente pelo meio */
     gap: 60px;
     background-color: #ffa5b4;
@@ -241,7 +291,7 @@ section {
 
 .logorodape {
     /* Seleciona o elemento com a classe "logorodape" dentro do elemento de rodapé */
-    width: 380px;
+    width: 200px;
     /* Define a largura máxima da imagem do logo no rodapé */
     height: auto;
     /* Define a altura máxima da imagem do logo no rodapé */
@@ -255,7 +305,6 @@ section {
     /* Seleciona o elemento com a classe "contato" dentro do elemento de rodapé */
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
 .contato-titulo {
@@ -279,7 +328,6 @@ section {
 }
 
 .item-contato p {
-    margin: 0;
     font-size: 18px;
     color: #692004;
     line-height: 1.2;
@@ -288,7 +336,7 @@ section {
 .horarios {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 12px;
     color: #692004;
 }
