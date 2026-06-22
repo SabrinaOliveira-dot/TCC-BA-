@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"> <!-- Link para o arquivo CSS -->
     <link rel="shourtcut icon" href="./Imagens/Design-sem-nome.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Link para o ícone da página -->
     <title>Império dos Bolos, Doces e Salgados</title>
 </head>
@@ -29,12 +30,32 @@
         </nav>
     </header>
 
-    <div class="banner">
-        <div class="titulo">
-            <h1>Bem-vindo ao Império dos Bolos, Doces e Salgados!</h1>
-            <p>Delícias que conquistam paladares</p>
-        </div> <!-- Div para a sobreposição do banner -->
-        <img src="./Imagens/Banner da loja.jpg" alt="banner">
+
+    <main>
+        <section id="hero">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Imagens/Banner da loja.jpg" class="d-block w-100" alt="Banner brownie">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Imagens/Bolos,doces e salgados.jpg" class="d-block w-100" alt="Banner bolo">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Imagens/banner brigadeiro.jpg" class="d-block w-100" alt="Banner brigadeiro">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+    </main>
 
  <div class="container-onda">
   <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 350" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
@@ -131,7 +152,7 @@
 
             <div class="item-contato">
                 <img src="./Imagens/mapa.png" alt="Localização">
-                <p>Rua Jão Dominc, 159 casa - Santa Catarina </p>
+                <p>Rua Jão Dominic, 159 casa - Santa Catarina </p>
             </div>
         </div>
 
@@ -142,5 +163,7 @@
             <p>Domingo: Fechado</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
     </html>
