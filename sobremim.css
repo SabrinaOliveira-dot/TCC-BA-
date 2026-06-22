@@ -193,7 +193,7 @@ main {
     /* padding-top: 180px - adiciona espaço no topo para não sobrepor o header fixo */
     padding-top: 180px;
     /* padding-bottom: 80px - adiciona espaço na base para separar do rodapé */
-    padding-bottom: 80px;
+    padding-bottom: 260px;
     /* width: 100% - faz o main ocupar toda a largura da página */
     width: 100%;
 }
@@ -259,9 +259,11 @@ h2 {
     /* height: auto - mantém a proporção original da imagem */
     height: auto;
     /* border-radius: 15px - cria bordas arredondadas com raio de 15 pixels */
-    border-radius: 15px;
+    border-radius: 25px;
     /* box-shadow: 0 8px 16px rgba(0,0,0,0.3) - adiciona uma sombra pronounced à imagem */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    background-color: #ffa5b4;
 }
 
 /* Estilos para a coluna do meio (texto principal) */
