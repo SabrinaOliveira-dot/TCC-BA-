@@ -61,7 +61,7 @@ nav {
 }
 
 .logo img {
-    width: 180px;
+    width: 100px;
     /* Define largura da imagem da logo */
     border-radius: 50%;
     /* Deixa a imagem circular (redonda) */
@@ -128,7 +128,7 @@ nav {
     /* Espaçamento interno: 5px acima/abaixo, 20px esquerda/direita */
     height: 40px;
     /* Altura fixa para consistência */
-    width: 380px;
+    width: 300px;
     /* Largura da barra de pesquisa */
 }
 
@@ -137,7 +137,6 @@ nav {
     flex: 1;
     /* Faz o input ocupar todo o espaço restante do container */
     height: 100%;
-    /* Faz o input ter a mesma altura do container (40px) */
     border: none;
     /* Remove a borda padrão do HTML */
     background: transparent;
@@ -309,7 +308,7 @@ main {
     font-style: normal;
 }
 
-/* ===== PREÇO DO PRODUTO ===== */
+
 .preco {
     font-size: 18px;
     color: #692004;
@@ -347,7 +346,7 @@ main {
     align-items: flex-start;
     gap: 40px;
     background-color: #ffa5b4;
-    padding: 25px 40px;
+   
 }
 
 
@@ -377,6 +376,7 @@ main {
     color: #692004;
     font-family: "Playfair Display", serif;
     margin-bottom: 5px;
+    padding: 20px;
 
 }
 
@@ -385,6 +385,8 @@ main {
     color: #692004;
     font-family: "Playfair Display", serif;
     margin-bottom: 5px;
+    padding: 20px;
+   
 }
 
 
@@ -392,11 +394,13 @@ main {
     display: flex;
     align-items: center;
     gap: 12px;
+    
 }
 
 .item-contato img {
-    height: 50px;
+    height: 40px;
     object-fit: contain;
+    
 }
 
 .item-contato p {
@@ -411,6 +415,7 @@ main {
     font-size: 20px;
     color: #692004;
     line-height: 1.4;
+    
 }
 
 
@@ -418,6 +423,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
