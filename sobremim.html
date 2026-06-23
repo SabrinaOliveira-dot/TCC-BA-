@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sobremim.css"> <!-- Link para o arquivo CSS -->
-    <link rel="shourtcut icon" href="./Imagens/Design-sem-nome.ico" type="image/x-icon">
-    <!-- Link para o ícone da página -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./sobremim.css">
+    <link rel="shortcut icon" href="./Imagens/Design-sem-nome.ico" type="image/x-icon">
+
     <title>Império dos Bolos, Doces e Salgados</title>
 </head>
 
 <body>
     <header>
-        <nav> <!-- Navegação do site -->
-            <div class="logo"> <!-- Div para o logo da loja -->
-                <img src="./Imagens/Logo confeitaria.png" alt="logo">
+        <nav>
+            <div class="logo"> <img src="./Imagens/Logo confeitaria.png" alt="logo">
             </div>
 
             <div class="links">
@@ -23,10 +26,10 @@
                 <a href="./sobremim.html"> Sobre mim </a>
             </div>
 
-            <a href="https://wa.me/558191528525" target="_blank" class="carrinho-botao">
-                <img src="./Imagens/carrinho.png" alt="Carrinho" class="carrinho-icone"> <span
-                    id="contador-carrinho">0</span>
-            </a>
+            <form class="busca pesquisabusca-container">
+                <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
+                <input type="text" placeholder="O que você está buscando?">
+            </form>
         </nav>
     </header>
 
@@ -43,16 +46,16 @@
                 <section>
                     <h1>Conheça a minha história</h1>
                     <div class="historia-texto">
-                        <p>Natural de Escada, cidade localizada em Pernambuco, Tamires descobriu sua paixão pela
-                            confeitaria há cerca de 17 anos, através da convivência com sua ex-cunhada, que já atuava
-                            profissionalmente na área.</p>
-                        <p>A admiração pelo trabalho e pela criatividade presente na confeitaria despertou nela o
-                            interesse em aprender cada vez mais sobre essa área.</p>
+                        <p> Olá, meu nome é Tamires e estou a 17 anos trabalhando na aréa da confeitaria.
+                            
+                           <p> Nasci em Escada, cidade localizada em Pernambuco, foi na minha terra natal que me apaioxonei pela aréa,  através da convivência com minha ex-cunhada, que já atuava profissionalmente na área.</p>
+
+                        <p> Sempre tive interesse em aprender cada vez mais sobre essa área.</p>
                         <p>Com o passar do tempo, a confeitaria deixou de ser apenas um interesse e se tornou uma
-                            verdadeira paixão. Mesmo sem realizar cursos profissionalizantes, Tamires desenvolveu suas
-                            habilidades através da prática, da experiência e da dedicação constante ao seu trabalho.</p>
-                        <p>Ela foi aprimorando suas técnicas e conquistando experiência na produção de bolos, doces e
-                            salgados para diferentes ocasiões. Seu trabalho passou a ser reconhecido pela dedicação,
+                            verdadeira paixão. Mesmo sem realizar cursos profissionalizantes, eu desenvolvi minhas
+                            habilidades através da prática, da experiência e da dedicação constante ao meu trabalho.</p>
+                        <p>Fui aprimorando minhas técnicas e conquistando experiência na produção de bolos, doces e
+                            salgados para diferentes ocasiões.  trabalho passou a ser reconhecido pela dedicação,
                             pelo cuidado nos detalhes e pelo carinho presente em cada produção.</p>
                     </div>
                 </section>
@@ -77,24 +80,6 @@
 
 
     <footer class="rodape"> <!--É a barra do meu rodapé-->
-
-        <div class="container-onda-rodape">
-            <svg width="100%" height="100%" id="svg-rodape" viewBox="0 0 1440 350" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="gradient-rodape" x1="0%" y1="50%" x2="100%" y2="50%">
-                        <stop offset="5%" stop-color="#F78DA7"></stop>
-                        <stop offset="95%" stop-color="#692004"></stop>
-                    </linearGradient>
-                </defs>
-                <path
-                    d="M 0,600 L 0,150 C 82.7948717948718,184.63846153846154 165.5897435897436,219.27692307692308 238,211 C 310.4102564102564,202.72307692307692 372.43589743589746,151.53076923076924 457,140 C 541.5641025641025,128.46923076923076 648.6666666666666,156.6 738,183 C 827.3333333333334,209.4 898.897436,234.06923076923076 976,211 C 1053.102564102564,187.93076923076924 1135.7435897435896,117.12307692307692 1214,99 C 1292.2564102564104,80.87692307692308 1366.128205128205,115.43846153846154 1440,150 L 1440,600 L 0,600 Z"
-                    stroke="none" stroke-width="0" fill="url(#gradient-rodape)" fill-opacity="0.53"></path>
-                <path
-                    d="M 0,600 L 0,350 C 72.45384615384614,379.7948717948718 144.9076923076923,409.5897435897436 227,424 C 309.0923076923077,438.4102564102564 400.823076923077,437.4358974358974 479,415 C 557.176923076923,392.5641025641026 621.8,348.6666666666667 715,332 C 808.2,315.3333333333333 929.976923076923,325.8974358974359 1002,330 C 1074.023076923077,334.1025641025641 1096.2923076923078,331.7435897435898 1161,334 C 1225.7076923076922,336.2564102564102 1332.853846153846,343.1282051282051 1440,350 L 1440,600 L 0,600 Z"
-                    stroke="none" stroke-width="0" fill="url(#gradient-rodape)" fill-opacity="1"></path>
-            </svg>
-        </div>
-
         <div class="logorodape-principal"> <!--Essa aqui é da minha barra-->
             <img class="logorodape" src="./Imagens/Logo confeitaria.png" alt="logo">
         </div>
