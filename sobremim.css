@@ -36,10 +36,6 @@ body {
 
 }
 
-
-
-/* ===== CABEÇALHO FIXO ===== */
-
 header {
 
     position: fixed;
@@ -102,9 +98,6 @@ nav {
 }
 
 
-
-/* ===== LOGO NA NAVEGAÇÃO ===== */
-
 .logo {
 
     position: relative;
@@ -131,13 +124,10 @@ nav {
 
     border-radius: 50%;
 
-    /* Deixa a imagem circular (redonda) */
+    
 
 }
 
-
-
-/* ===== CONTAINER DOS LINKS DE NAVEGAÇÃO ===== */
 
 .links {
 
@@ -155,9 +145,6 @@ nav {
 
 }
 
-
-
-/* ===== ESTILO DOS LINKS DE NAVEGAÇÃO ===== */
 
 .links a {
 
@@ -215,10 +202,6 @@ nav {
 
 }
 
-
-
-/* ===== EFEITO AO PASSAR MOUSE NOS LINKS ===== */
-
 .links a:hover {
 
     transform: scale(1.05);
@@ -228,9 +211,6 @@ nav {
 }
 
 
-/* ===== BARRA DE PESQUISA ===== */
-
-/* Container (recipiente) da barra de pesquisa */
 .pesquisabusca-container {
     display: flex;
     /* Usa flexbox para alinhar o input e o ícone horizontalmente */
@@ -287,7 +267,7 @@ nav {
 /* Estilos para o elemento main (conteúdo principal da página) */
 main {
     /* padding-top: 180px - adiciona espaço no topo para não sobrepor o header fixo */
-    padding-top: 180px;
+    padding-top: 220px;
     /* padding-bottom: 80px - adiciona espaço na base para separar do rodapé */
     padding-bottom: 260px;
     /* width: 100% - faz o main ocupar toda a largura da página */
@@ -488,7 +468,7 @@ h2 {
 /* Estilos para a imagem dos ícones de contato */
 .item-contato img {
     /* height: 24px - define a altura do ícone como 24 pixels */
-    height: 24px;
+    height: 50px;
     /* object-fit: contain - ajusta a imagem dentro do espaço sem distorcer */
     object-fit: contain;
 }

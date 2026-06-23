@@ -26,10 +26,6 @@
 
 }
 
-
-
-
-
 body {
 
     background-color: #692004;
@@ -37,10 +33,6 @@ body {
     /* Define cor de fundo em toda a página */
 
 }
-
-
-
-/* ===== CABEÇALHO FIXO ===== */
 
 header {
 
@@ -71,10 +63,6 @@ main {
     /* Cria o espaço necessário para o conteúdo não sumir sob o header */
     width: 100%;
 }
-
-
-
-/* ===== BARRA DE NAVEGAÇÃO ===== */
 
 nav {
 
@@ -143,10 +131,6 @@ nav {
 
 }
 
-
-
-/* ===== CONTAINER DOS LINKS DE NAVEGAÇÃO ===== */
-
 .links {
 
     display: flex;
@@ -164,10 +148,6 @@ nav {
 
 
 }
-
-
-
-/* ===== ESTILO DOS LINKS DE NAVEGAÇÃO ===== */
 
 .links a {
 
@@ -227,10 +207,6 @@ nav {
 
 }
 
-
-
-/* ===== EFEITO AO PASSAR MOUSE NOS LINKS ===== */
-
 .links a:hover {
 
     transform: scale(1.05);
@@ -240,11 +216,6 @@ nav {
 
 
 }
-
-
-
-
-/* Container (recipiente) da barra de pesquisa */
 
 .pesquisabusca-container {
     display: flex;
@@ -287,7 +258,7 @@ nav {
     /* Deixa o texto de sugestão "O que você está buscando" em branco e legível */
 }
 
-/* Ícone de lupa (busca) */
+
 .icone-lupa {
     height: 18px;
     /* Altura do ícone */
@@ -408,3 +379,82 @@ h1 {
     transition: transform 0.2s ease-in-out, background-color 0.2s;
 }
 
+
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: #ffa5b4;
+   padding: 25px 40px;
+    margin-top: 60px;
+}
+
+.logorodape-principal {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.logorodape {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.contato-titulo{
+    font-size: 22px;
+    color: #692004;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+}
+
+
+.atendimento-titulo {
+    font-size: 22px;
+    color: #692004;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+}
+
+
+.item-contato {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-contato img {
+    height: 50px;
+    object-fit: contain;
+}
+
+.item-contato {
+    font-size: 20px;
+    color: #692004;
+    line-height: 1.4; 
+
+}
+
+
+.horarios p {
+    font-size: 20px;
+    color: #692004;
+    line-height: 1.4;
+}
+
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
