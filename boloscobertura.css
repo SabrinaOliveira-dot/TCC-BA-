@@ -31,7 +31,7 @@
 
 body {
     background-color: #692004;
-    background-image: url('./Imagens/papel\ de\ fundo.png');
+    background-image: url('./Imagens/Banner\ fundo\ rosa.png');
     background-size: 26%; 
     background-repeat: repeat; 
     background-attachment: fixed; 
@@ -70,9 +70,6 @@ main {
 }
 
 
-
-/* ===== BARRA DE NAVEGAÇÃO ===== */
-
 nav {
 
     display: flex;
@@ -107,9 +104,6 @@ nav {
 }
 
 
-
-/* ===== LOGO NA NAVEGAÇÃO ===== */
-
 .logo {
 
     position: relative;
@@ -130,7 +124,7 @@ nav {
 
 .logo img {
 
-    width: 180px;
+    width: 100px;
 
     /* Define largura da imagem da logo */
 
@@ -139,10 +133,6 @@ nav {
     /* Deixa a imagem circular (redonda) */
 
 }
-
-
-
-/* ===== CONTAINER DOS LINKS DE NAVEGAÇÃO ===== */
 
 .links {
 
@@ -161,10 +151,6 @@ nav {
 
 
 }
-
-
-
-/* ===== ESTILO DOS LINKS DE NAVEGAÇÃO ===== */
 
 .links a {
 
@@ -234,7 +220,6 @@ nav {
 
 }
 
-
 .pesquisabusca-container {
     display: flex;
     /* Usa flexbox para alinhar o input e o ícone horizontalmente */
@@ -248,7 +233,7 @@ nav {
     /* Espaçamento interno: 5px acima/abaixo, 20px esquerda/direita */
     height: 40px;
     /* Altura fixa para consistência */
-    width: 380px;
+    width: 300px;
     /* Largura da barra de pesquisa */
 }
 
@@ -276,7 +261,7 @@ nav {
     /* Deixa o texto de sugestão "O que você está buscando" em branco e legível */
 }
 
-/* Ícone de lupa (busca) */
+
 .icone-lupa {
     height: 18px;
     /* Altura do ícone */
@@ -287,6 +272,8 @@ nav {
     object-fit: contain;
     /* Mantém a proporção da imagem sem distorcer */
 }
+
+
 
 
 h1 {
