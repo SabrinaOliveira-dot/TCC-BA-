@@ -1,35 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="./style.css">
-    <link rel="shourtcut icon" href="./Imagens/Design-sem-nome.ico" type="imagem/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./boloscobertura.css">
+    <link rel="shortcut icon" href="./Imagens/Design-sem-nome.ico" type="image/x-icon">
+
     <title>Império dos Bolos, Doces e Salgados</title>
 </head>
+
 <body>
-    
     <header>
-        <h1> Seja bem-vindos a minha confeitaria!</h1>
-        <img src="./logo" alt="">
-        <img src="./banner" alt="">
         <nav>
-            <a href="./index.html"> Loja </a>
-            <a href="./catalogos.css"> Catálogo </a>
-            <a href="./vitrine.html"> Vitrine </a>
-            <a href="./sobremim.html"> Sobre mim </a>
+            <div class="logo"> <img src="./Imagens/Logo confeitaria.png" alt="logo">
+            </div>
+
+            <div class="links">
+                <a href="./index.html"> Loja </a>
+                <a href="./catalogos.html"> Catálogo </a>
+                <a href="./sobremim.html"> Sobre mim </a>
+            </div>
+
+            <form class="busca pesquisabusca-container">
+                <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
+                <input type="text" placeholder="O que você está buscando?">
+            </form>
         </nav>
     </header>
 
-    <section>
-        
-        <main>
+    <main>
+    <h1> Bolos com cobertura</h1>
+
+    <section class="opcoes">
+        <div class="produtos">
             
-        </main>
+            <div class="doces">
+                <img class="imagem" src="./Imagens/bolo de laranja.jpeg" alt="Bolo de laranja com cobertura de laranja">
+                <h2 class="nome-produto">Bolo de laranja com cobertura de ninho</h2> 
+
+                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de laranja com cobertura."
+                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
+            </div>
+
+            <div class="doces">
+                <img class="imagem" src="./Imagens/bolo de coco com cobertura de chocolate.jpeg" alt="Bolo de cenoura com cobertura de chocolate">
+                <h2 class="nome-produto">Bolo de cenoura com cobertura de chocolate</h2>
+                
+                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de cenoura com cobertura de chocolate."
+                   target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+            </div>
+
+            <div class="doces">
+                <img class="imagem" src="./Imagens/bolo de maracuja.jpeg" alt="Bolo de maracuja com cobertura de maracuja">
+                <h2 class="nome-produto"> Bolo de maracuja com cobertura de maracujá</h2>
+                
+                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de maracuja com cobertura de maracuja."
+                   target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+            </div>
+
+             <div class="doces">
+                <img class="imagem" src="./Imagens/bolo de chocolate com cobertura de chocolate.jpeg" alt="Bolo de chocolate com cobertura de chocolate">
+                <h2 class="nome-produto">Bolo de chocolate com cobertura de chocolate</h2>
+                
+                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de chocolate com conbertura de chocolate."
+                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
+            </div>
+
+           <div class="doces">
+                <img class="imagem" src="./Imagens/bolo de paçoca.jpeg" alt="Bolo de coco com cobertura de paçoca">
+                <h2 class="nome-produto">Bolo de coco ao leite com cobertura de paçoca </h2>
+                
+                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar um Bolo de coco com cobertura de paçoca."
+                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
+            </div>
+
+             <div class="doces">
+                <img class="imagem" src="./Imagens/bolo de leite ninho.jpeg" alt="Bolo de coco com cobertura de leite ninho">
+                <h2 class="nome-produto">Bolo de coco com cobertura de leite ninho</h2>
+                
+                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar um Bolo de coco com cobertura de paçoca."
+                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
+            </div>
+
+        </div>
     </section>
+</main>
 
-    <footer>
 
+    <footer class="rodape">
+        <div class="logorodape-principal"> <img class="logorodape" src="./Imagens/Logo confeitaria.png" alt="logo">
+        </div>
+
+        <div class="contato">
+            <h3 class="contato-titulo">Entre em contato</h3>
+
+            <div class="item-contato">
+                <img src="./Imagens/whatsapp.png" alt="WhatsApp">
+                <p> (81) 9152-8525</p>
+            </div>
+
+            <div class="item-contato">
+                <img src="./Imagens/instagram.png" alt="Instagram">
+                <p>@imperiodosbolos</p>
+            </div>
+
+            <div class="item-contato">
+                <img src="./Imagens/mapa.png" alt="Localização">
+                <p>Rua Jão Dominic, 159 casa - Santa Catarina </p>
+            </div>
+        </div>
+
+        <div class="horarios">
+            <h3 class="atendimento-titulo">Horário de atendimento</h3>
+            <p>Segunda a Sexta: 08:00 - 18:00</p>
+            <p>Sábado: 08:00 - 14:00</p>
+            <p>Domingo: Fechado</p>
+        </div>
     </footer>
-</body>
-</html>

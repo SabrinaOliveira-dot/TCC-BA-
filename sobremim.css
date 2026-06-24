@@ -1,197 +1,269 @@
-/*Cores da empresa: #692004 marrom, #ffa5b4 rosa, #ffffff branco*/
+/* #692004 - Marrom */
 
-/* Seletor universal (*) que se aplica a TODOS os elementos da página */
+/* #ffa5b4 - Rosa*/
+
+/* #ffffff - c */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech&display=swap');
+/*paragrafo*/
+
+
 * {
-    /* box-sizing: border-box - inclui padding e border no cálculo da largura/altura total */
+
     box-sizing: border-box;
-    /* margin: 0% - remove todas as margens externas padrão */
-    margin: 0%;
-    /* padding: 0% - remove todo o preenchimento interno padrão */
-    padding: 0%;
+
+    /* Inclui borda e padding na largura total do elemento */
+
+    margin: 0;
+
+    /* Remove margens externas padrão */
+
+    padding: 0;
+
+    /* Remove espaçamento interno padrão */
+
 }
 
-/* Estilos para o elemento body (corpo da página) */
+
+
+
+
 body {
-    /* Define a cor de fundo da página inteira como marrom (#692004) */
+
     background-color: #692004;
+
+    /* Define cor de fundo em toda a página */
+
 }
 
-/* Estilos para o elemento header (cabeçalho fixo no topo) */
 header {
-    /* position: fixed - fixa o header na posição mesmo ao rolar a página */
+
     position: fixed;
-    /* top: 0 - posiciona o header no topo da página */
+
+    /* Fixa o cabeçalho no topo, sem se mover ao fazer scroll */
+
     top: 0;
-    /* left: 0 - posiciona o header no lado esquerdo da página */
+
+    /* Posiciona no topo da página */
+
     left: 0;
-    /* width: 100% - faz o header ocupar toda a largura da página */
+
+    /* Alinha ao lado esquerdo */
+
     width: 100%;
-    /* z-index: 100 - coloca o header acima de outros elementos (prioridade visual) */
+
+    /* Ocupa 100% da largura disponível */
+
     z-index: 100;
+
+    /* Garante que fique sobre outros elementos (profundidade) */
+
 }
 
-/* Estilos para a classe logo dentro do header */
-.logo {
-    /* position: relative - posiciona o logo em relação ao seu contexto normal */
-    position: relative;
-    /* width: 200px - define a largura do logo como 200 pixels */
-    width: 200px;
-    /* height: 100% - faz a altura ocupar 100% do seu container pai */
-    height: 100%;
-}
-
-/* Estilos para as imagens dentro da classe logo */
-.logo img {
-    /* width: 150px - define a largura da imagem do logo como 150 pixels */
-    width: 150px;
-    /* border-radius: 50% - cria bordas arredondadas perfeitas (círculo) */
-    border-radius: 50%;
-    /* margin: 10px - adiciona 10 pixels de espaço em volta da imagem */
-    margin: 10px;
-}
-
-/* Estilos para o elemento nav (barra de navegação) */
 nav {
-    /* display: flex - usa flexbox para organizar os itens em uma linha */
+
     display: flex;
-    /* background-color: #ffa5b4 - define a cor de fundo como rosa */
+
+    /* Usa flexbox para organizar elementos em linha */
+
     background-color: #ffa5b4;
-    /* justify-content: space-between - distribui os itens com espaço entre eles */
+
+    /* Define fundo rosa */
+
     justify-content: space-between;
-    /* align-items: center - centraliza os itens verticalmente */
+
+    /* Distribui espaço entre itens horizontalmente */
+
     align-items: center;
-    /* padding: 0 40px - adiciona 40 pixels de espaço nas laterais */
-    padding: 0 40px;
-    /* flex-wrap: nowrap - mantém todos os itens na mesma linha sem quebra */
+
+    /* Alinha itens ao centro na vertical */
+
+    padding: 2px 40px;
+
+    /* Espaçamento: 2px acima/abaixo, 40px esquerda/direita */
+
     flex-wrap: nowrap;
-}
 
-/* Estilos para todos os links dentro da navegação */
-nav a {
-    /* display: flex - usa flexbox para organizar o conteúdo do link */
-    display: flex;
-    /* text-decoration: none - remove o sublinhado padrão dos links */
-    text-decoration: none;
-    /* background-color: #692004 - define a cor de fundo dos links como marrom */
-    background-color: #692004;
-    /* color: #ffffff - define a cor do texto como branco */
-    color: #ffffff;
-    /* Define a fonte do texto como "Playfair Display" (fonte elegante com serifas) */
+    /* Não quebra itens em nova linha (mantém uma linha) */
+
     font-family: "Playfair Display", serif;
-    /* Otimização automática do tamanho da fonte para melhor legibilidade */
     font-optical-sizing: auto;
-    /* font-weight: 15px - define o peso da fonte (nota: o valor correto seria um número, não px) */
-    font-weight: 15px;
-    /* font-style: normal - mantém o texto sem itálico */
+    font-weight: 25px;
     font-style: normal;
-    /* margin: 0 20px - adiciona 20 pixels de espaço nas laterais */
-    margin: 0 20px;
-    /* font-size: 18px - define o tamanho da fonte como 18 pixels */
-    font-size: 18px;
-    /* Cria uma borda sólida de 2 pixels ao redor dos links na cor marrom */
-    border: 2px solid #692004;
-    /* padding: 10px 50px - adiciona espaço interno: 10px acima/abaixo, 50px nas laterais */
-    padding: 10px 50px;
-    /* border-radius: 60px - cria bordas arredondadas para um efeito de botão */
-    border-radius: 60px;
+
 }
 
-/* Estilos para a classe links (container dos links de navegação principais) */
-.links {
-    /* display: flex - usa flexbox para organizar os links em uma linha */
-    display: flex;
-    /* justify-content: center - centraliza os links no centro do container */
-    justify-content: center;
-    /* flex-grow: 1 - faz esse bloco ocupar todo o espaço disponível no meio do menu */
-    flex-grow: 1;
-}
 
-/* Aplica estilos específicos aos links dentro da classe links (seções do menu) */
-.links a {
-    /* text-decoration: none - remove o sublinhado padrão dos links */
-    text-decoration: none;
-    /* background-color: #692004 - define a cor de fundo dos links como marrom */
-    background-color: #692004;
-    /* color: #ffffff - define a cor do texto como branco */
-    color: #ffffff;
-    /* Define a fonte como "Playfair Display" com serifas como fallback */
-    font-family: "Playfair Display", serif;
-    /* font-size: 18px - define o tamanho da fonte como 18 pixels */
-    font-size: 18px;
-    /* Cria uma borda sólida de 2 pixels na cor marrom */
-    border: 2px solid #692004;
-    /* padding: 10px 60px - adiciona espaço interno: 10px acima/abaixo, 60px nas laterais */
-    padding: 10px 60px;
-    /* border-radius: 60px - cria bordas arredondadas para um efeito de botão */
-    border-radius: 60px;
-    /* margin: 0 25px - adiciona 25 pixels de espaço nas laterais de cada link */
-    margin: 0 25px;
-    /* white-space: nowrap - impede que o texto do link quebre em múltiplas linhas */
-    white-space: nowrap;
-}
+.logo {
 
-/* Efeito de hover - quando o mouse passa sobre um link */
-.links a:hover {
-    /* transform: scale(1.05) - aumenta o tamanho do link em 5% ao passar o mouse */
-    transform: scale(1.05);
-}
-
-/* Estilos para o botão do carrinho no canto direito do menu */
-.carrinho-botao {
-    /* position: relative - permite posicionar elementos filhos em relação a este container */
     position: relative;
-    /* display: flex - usa flexbox para organizar o conteúdo do botão */
-    display: flex;
-    /* align-items: center - centraliza o ícone verticalmente */
-    align-items: center;
-    /* justify-content: center - centraliza o ícone horizontalmente */
-    justify-content: center;
-    /* text-decoration: none - remove o sublinhado padrão dos links */
-    text-decoration: none;
-    /* padding: 10px - adiciona 10 pixels de espaço interno em volta do ícone */
-    padding: 10px;
+
+    /* Define posicionamento relativo para alocar bem na nav */
+
+    width: 100px;
+
+    /* Largura da logo */
+
+    height: auto;
+
+    /* Altura ajustada automaticamente proporcionalmente */
+
 }
 
-/* Estilos para o ícone do carrinho dentro do botão */
-.carrinho-icone {
-    /* width: 45px - define a largura do ícone como 45 pixels */
-    width: 45px;
-    /* height: 30px - define a altura do ícone como 30 pixels */
-    height: 30px;
-}
 
-/* Estilos para o contador de itens do carrinho (número no canto superior direito) */
-#contador-carrinho {
-    /* position: absolute - posiciona o contador em relação ao seu container pai (botão carrinho) */
-    position: absolute;
-    /* top: 0px - alinha o contador no topo do botão */
-    top: 0px;
-    /* right: -2px - posiciona o contador 2 pixels para a direita do canto superior direito */
-    right: -2px;
-    /* background-color: #692004 - define a cor de fundo do contador como marrom */
-    background-color: #692004;
-    /* color: #ffffff - define a cor do texto como branco */
-    color: #ffffff;
-    /* font-size: 14px - define o tamanho da fonte como 14 pixels */
-    font-size: 14px;
-    /* font-weight: bold - torna o texto do contador em negrito */
-    font-weight: bold;
-    /* border-radius: 50% - cria um círculo perfeito para o contador */
+
+.logo img {
+
+    width: 100px;
+
+    /* Define largura da imagem da logo */
+
     border-radius: 50%;
-    /* padding: 2px 7px - adiciona espaço interno: 2px acima/abaixo, 7px nas laterais */
-    padding: 2px 7px;
-    /* min-width: 20px - define a largura mínima do contador como 20 pixels */
-    min-width: 20px;
-    /* text-align: center - centraliza o texto dentro do contador */
-    text-align: center;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) - adiciona uma sombra suave ao redor do contador */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    
+
+}
+
+
+.links {
+
+    display: flex;
+
+    /* Usa flexbox para alinhar links horizontalmente */
+
+    justify-content: center;
+
+    /* Centraliza os links horizontalmente */
+
+    flex-grow: 1;
+
+    /* Ocupa o espaço restante disponível na nav */
+
+}
+
+
+.links a {
+
+    display: inline-block;
+
+    /* Permite dar width/height em um elemento inline */
+
+    text-decoration: none;
+
+    /* Remove o sublinhado padrão dos links */
+
+    background-color: #692004;
+
+    /* Fundo marrom nos botões */
+
+    color: #ffffff;
+
+    /* Texto branco */
+
+    font-family: "Playfair Display", serif;
+
+    /* Fonte elegante para titulos */
+
+    font-size: 16px;
+
+    /* Tamanho do texto */
+
+    font-weight: bold;
+
+    /* Deixa o texto mais grosso/marcado */
+
+    border: 2px solid #692004;
+
+    /* Borda marrom ao redor */
+
+    padding: 8px 60px;
+
+    /* Espaço interno: 8px acima/abaixo, 30px esquerda/direita */
+
+    border-radius: 60px;
+
+    /* Deixa as bordas muito arredondadas (botão arredondado) */
+
+    margin: 20px;
+
+    /* Espaço externo: 15px esquerda/direita */
+
+    white-space: nowrap;
+
+    /* Evita quebra de texto em várias linhas */
+
+    transition: transform 0.2s ease-in-out;
+
+    /* Suaviza transformações em 0.2 segundos */
+
+}
+
+.links a:hover {
+
+    transform: scale(1.05);
+
+    /* Aumenta o botão em 5% quando mouse passa sobre */
+
+}
+
+
+.pesquisabusca-container {
+    display: flex;
+    /* Usa flexbox para alinhar o input e o ícone horizontalmente */
+    align-items: center;
+    /* Alinha itens ao centro na vertical */
+    background-color: #692004;
+    /* Fundo marrom */
+    border-radius: 20px;
+    /* Deixa as bordas bem arredondadas (formato de pílula) */
+    padding: 5px 20px;
+    /* Espaçamento interno: 5px acima/abaixo, 20px esquerda/direita */
+    height: 40px;
+    /* Altura fixa para consistência */
+    width: 300px;
+    /* Largura da barra de pesquisa */
+}
+
+/* Campo de entrada (input) da pesquisa */
+.pesquisabusca-container input {
+    flex: 1;
+    /* Faz o input ocupar todo o espaço restante do container */
+    height: 100%;
+    /* Faz o input ter a mesma altura do container (40px) */
+    border: none;
+    /* Remove a borda padrão do HTML */
+    background: transparent;
+    /* Fundo transparente para integrar com o container marrom */
+    outline: none;
+    /* Remove a linha azul/laranja ao clicar no campo (padrão do navegador) */
+    color: #ffffff;
+    /* Cor do texto digitado em branco */
+    font-size: 16px;
+    /* Tamanho do texto confortável para leitura */
+}
+
+/* Estilo do texto placeholder (sugestão) do input */
+.pesquisabusca-container input::placeholder {
+    color: #ffffff;
+    /* Deixa o texto de sugestão "O que você está buscando" em branco e legível */
+}
+
+/* Ícone de lupa (busca) */
+.icone-lupa {
+    height: 18px;
+    /* Altura do ícone */
+    width: 20px;
+    /* Largura do ícone */
+    margin-right: 20px;
+    /* Espaço entre o ícone e o input */
+    object-fit: contain;
+    /* Mantém a proporção da imagem sem distorcer */
 }
 
 /* Estilos para o elemento main (conteúdo principal da página) */
 main {
     /* padding-top: 180px - adiciona espaço no topo para não sobrepor o header fixo */
-    padding-top: 180px;
+    padding-top: 220px;
     /* padding-bottom: 80px - adiciona espaço na base para separar do rodapé */
     padding-bottom: 260px;
     /* width: 100% - faz o main ocupar toda a largura da página */
@@ -206,6 +278,11 @@ h1 {
     padding: 25px;
     /* font-size: 40px - define o tamanho da fonte como 40 pixels (bem grande) */
     font-size: 40px;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 25px;
+    font-style: normal;
 }
 
 /* Estilos para parágrafos de texto */
@@ -214,6 +291,11 @@ p {
     color: #ffffff;
     /* font-size: 20px - define o tamanho da fonte como 20 pixels */
     font-size: 20px;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 25px;
+    font-style: normal;
 }
 
 /* Estilos para títulos h2 (segundo nível de título) */
@@ -224,6 +306,11 @@ h2 {
     padding: 25px;
     /* font-size: 30px - define o tamanho da fonte como 30 pixels */
     font-size: 30px;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 25px;
+    font-style: normal;
 }
 
 /* Estilos para o layout principal com 3 colunas */
@@ -307,149 +394,90 @@ h2 {
 }
 
 
-
-/* Estilos para o rodapé da página */
 .rodape {
-    /* position: relative - permite posicionar elementos filhos em relação a este container */
-    position: relative;
-    /* display: flex - usa flexbox para organizar o conteúdo do rodapé */
-    display: flex;
-    /* justify-content: space-between - distribui os itens com espaço entre eles */
+   display: flex;
     justify-content: space-between;
-    /* align-items: center - centraliza os itens verticalmente */
-    align-items: center;
-    /* gap: 40px - adiciona 40 pixels de espaço entre os elementos do rodapé */
+    align-items: flex-start;
     gap: 40px;
-    /* background-color: #ffa5b4 - define a cor de fundo do rodapé como rosa */
     background-color: #ffa5b4;
-    /* padding: 120px 60px 40px 60px - adiciona espaço interno: 120px acima, 60px nas laterais, 40px abaixo */
-    padding: 120px 60px 40px 60px;
+    padding: 15px 90px;
+   
 }
 
-/* Estilos para o container da onda decorativa no topo do rodapé */
-.container-onda-rodape {
-    /* position: absolute - posiciona a onda em relação ao seu container pai (rodapé) */
-    position: absolute;
-    /* top: 0 - alinha a onda no topo do rodapé */
-    top: 0;
-    /* left: 0 - alinha a onda no lado esquerdo */
-    left: 0;
-    /* width: 100% - faz a onda ocupar toda a largura do rodapé */
-    width: 100%;
-    /* line-height: 0 - remove espaço em branco gerado por elementos inline */
-    line-height: 0;
-    /* z-index: 1 - coloca a onda acima do fundo do rodapé */
-    z-index: 1;
-    /* transform: translateY(-99%) - move a onda 99% para cima, deixando apenas 1% visível */
-    transform: translateY(-99%);
-}
 
-/* Estilos para o SVG da onda dentro do container */
-.container-onda-rodape svg {
-    /* display: block - remove espaço em branco gerado por elementos inline */
-    display: block;
-    /* width: 100% - faz o SVG ocupar toda a largura do container */
-    width: 100%;
-    /* height: auto - mantém a proporção original do SVG */
-    height: auto;
-    /* max-height: 450px - define a altura máxima da onda como 450 pixels */
-    max-height: 450px;
-}
-
-/* Estilos para o container do logo e do texto no rodapé */
 .logorodape-principal {
-    /* display: flex - usa flexbox para organizar a logo e o texto lado a lado */
     display: flex;
-    /* align-items: center - centraliza a logo e o texto verticalmente */
     align-items: center;
-    /* gap: 20px - adiciona 20 pixels de espaço entre a logo e o texto */
     gap: 20px;
+    align-self: center;
 }
 
-/* Estilos para a imagem do logo no rodapé */
+
 .logorodape {
-    /* width: 200px - define a largura do logo como 200 pixels */
-    width: 200px;
-    /* height: auto - mantém a proporção original da imagem */
+    width: 100px;
     height: auto;
-    /* border-radius: 50% - cria bordas arredondadas perfeitas (círculo) */
     border-radius: 50%;
 }
 
-/* Estilos para o container de contato */
+
 .contato {
-    /* display: flex - usa flexbox para organizar os itens de contato verticalmente */
     display: flex;
-    /* flex-direction: column - organiza os itens em coluna (um embaixo do outro) */
     flex-direction: column;
-    /* gap: 15px - adiciona 15 pixels de espaço entre os itens de contato */
-    gap: 15px;
-}
-
-/* Estilos para o título da seção de contato */
-.contato-titulo {
-    /* font-size: 24px - define o tamanho da fonte como 24 pixels */
-    font-size: 24px;
-    /* color: #692004 - define a cor do texto como marrom */
-    color: #692004;
-}
-
-/* Estilos para cada item individual de contato (telefone, email, etc) */
-.item-contato {
-    /* display: flex - usa flexbox para organizar o ícone e o texto lado a lado */
-    display: flex;
-    /* align-items: center - centraliza o ícone e o texto verticalmente */
-    align-items: center;
-    /* gap: 12px - adiciona 12 pixels de espaço entre o ícone e o texto */
-    gap: 12px;
-}
-
-/* Estilos para a imagem dos ícones de contato */
-.item-contato img {
-    /* height: 24px - define a altura do ícone como 24 pixels */
-    height: 24px;
-    /* object-fit: contain - ajusta a imagem dentro do espaço sem distorcer */
-    object-fit: contain;
-}
-
-/* Estilos para o texto dos itens de contato */
-.item-contato p {
-    /* font-size: 18px - define o tamanho da fonte como 18 pixels */
-    font-size: 18px;
-    /* color: #692004 - define a cor do texto como marrom */
-    color: #692004;
-    /* line-height: 1.2 - define o espaçamento entre linhas como 1,2 vezes o tamanho da fonte */
-    line-height: 1.2;
-}
-
-/* Estilos para o container de horários */
-.horarios {
-    /* display: flex - usa flexbox para organizar os horários */
-    display: flex;
-    /* flex-direction: column - organiza os horários em coluna (um embaixo do outro) */
-    flex-direction: column;
-    /* gap: 12px - adiciona 12 pixels de espaço entre os horários */
-    gap: 12px;
-    /* color: #692004 - define a cor padrão como marrom */
-    color: #692004;
-}
-
-/* Estilos para os parágrafos dentro de horários */
-.horarios p {
-    /* display: flex - usa flexbox para organizar o conteúdo do parágrafo */
-    display: flex;
-    /* flex-direction: column - organiza o conteúdo em coluna */
-    flex-direction: column;
-    /* gap: 8px - adiciona 8 pixels de espaço dentro do parágrafo */
     gap: 8px;
-    /* color: #692004 - define a cor do texto como marrom */
-    color: #692004;
 }
 
-/* Estilos para o título da seção de atendimento */
-.atendimento-titulo {
-    /* font-size: 24px - define o tamanho da fonte como 24 pixels */
-    font-size: 24px;
-    /* color: #692004 - define a cor do texto como marrom */
+
+.contato-titulo {
+    font-size: 18px;
     color: #692004;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+    padding: 5px 0;
+
+}
+
+.atendimento-titulo {
+    font-size: 18px;
+    color: #692004;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+    padding: 5px 0;
+   
+}
+
+
+.item-contato {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.item-contato img {
+    height: 30px;
+    object-fit: contain;
+    
+}
+
+.item-contato p {
+    font-size: 15px;
+    color: #692004;
+    line-height: 1.4;
+
+}
+
+
+.horarios p {
+    font-size: 15px;
+    color: #692004;
+    line-height: 1.4;
+    
+}
+
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
 }
