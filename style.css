@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech&display=swap');
+/*titulo*/
+
+
 * {
     box-sizing: border-box;
     /* Inclui borda e padding na largura total do elemento */
@@ -221,6 +225,12 @@ nav {
     color: #ffa5b4;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
+.minha-onda {
+  width: 100vw;     
+  height: 150px;    
+  display: block;   
+}
+
 
 .maisvendidos {
     display: inline-flex;
@@ -239,6 +249,7 @@ nav {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 
 
 main {
@@ -341,11 +352,12 @@ main {
 
 
 .rodape {
-    display: flex;
+   display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
     background-color: #ffa5b4;
+    padding: 15px 90px;
    
 }
 
@@ -354,11 +366,12 @@ main {
     display: flex;
     align-items: center;
     gap: 20px;
+    align-self: center;
 }
 
 
 .logorodape {
-    width: 150px;
+    width: 100px;
     height: auto;
     border-radius: 50%;
 }
@@ -367,25 +380,25 @@ main {
 .contato {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
 }
 
 
 .contato-titulo {
-    font-size: 22px;
+    font-size: 18px;
     color: #692004;
     font-family: "Playfair Display", serif;
     margin-bottom: 5px;
-    padding: 20px;
+    padding: 5px 0;
 
 }
 
 .atendimento-titulo {
-    font-size: 22px;
+    font-size: 18px;
     color: #692004;
     font-family: "Playfair Display", serif;
     margin-bottom: 5px;
-    padding: 20px;
+    padding: 5px 0;
    
 }
 
@@ -398,13 +411,13 @@ main {
 }
 
 .item-contato img {
-    height: 40px;
+    height: 30px;
     object-fit: contain;
     
 }
 
 .item-contato p {
-    font-size: 20px;
+    font-size: 15px;
     color: #692004;
     line-height: 1.4;
 
@@ -412,7 +425,7 @@ main {
 
 
 .horarios p {
-    font-size: 20px;
+    font-size: 15px;
     color: #692004;
     line-height: 1.4;
     
@@ -422,9 +435,11 @@ main {
 .horarios {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     text-align: left;
 }
+
+
 
 @media (max-width: 768px) {
 
@@ -441,8 +456,6 @@ main {
         padding: 15px;
         max-height: 240px;
         /* Evita que o menu passe da tela do celular */
-        overflow-y: auto;
-        /* Scroll caso o conteúdo do menu acumule */
     }
 
 
@@ -463,8 +476,7 @@ main {
         margin: 0;
         text-align: center;
         width: 100%;
-        padding: 6px 20px;
-        /* Reduz padding lateral excessivo do desktop */
+        padding: 6px 10px;
         font-size: 14px;
     }
 
@@ -491,7 +503,6 @@ main {
     .maisvendidos {
         font-size: 22px;
         margin: 60px auto 30px auto;
-        /* Corrigido espaçamento superior de 200px do desktop */
         padding: 10px 20px;
         display: flex;
     }
@@ -523,7 +534,7 @@ main {
         /* Botão em largura cheia dentro do card */
     }
 
-    /* ===== RODAPÉ RESPONSIVO ===== */
+  
     .rodape {
         flex-direction: column;
         align-items: center;
@@ -555,7 +566,12 @@ main {
         height: 35px;
     }
 
-    .item-contato p,
+    .item-contato p{
+          font-size: 16px;
+
+    }
+
+
     .horarios p {
         font-size: 16px;
     }

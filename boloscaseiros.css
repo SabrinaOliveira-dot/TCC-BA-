@@ -28,11 +28,12 @@
 
 
 body {
-
     background-color: #692004;
-
-    /* Define cor de fundo em toda a página */
-
+    background-image: url('./Imagens/papel\ de\ fundo.png');
+    background-size: 26%; 
+    background-repeat: repeat; 
+    background-attachment: fixed; 
+    background-position: top left; 
 }
 
 header {
@@ -119,7 +120,7 @@ nav {
 
 .logo img {
 
-    width: 180px;
+    width: 100px;
 
     /* Define largura da imagem da logo */
 
@@ -229,7 +230,7 @@ nav {
     /* Espaçamento interno: 5px acima/abaixo, 20px esquerda/direita */
     height: 40px;
     /* Altura fixa para consistência */
-    width: 380px;
+    width: 300px;
     /* Largura da barra de pesquisa */
 }
 
@@ -291,12 +292,13 @@ h1 {
 
 
 
+
 .doces {
-    background-color: #fff;
+   background-color: #fff;
     padding: 15px;
+    padding-bottom: 30px; /* ADICIONADO: Mais espaço em branco no fundo do cartão */
     border-radius: 10px;
     width: 100%;
-    /* Ocupa o espaço da coluna do Grid */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,7 +307,7 @@ h1 {
 
 .doces img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -320,7 +322,7 @@ h1 {
     /* Centraliza os doces dentro de cada coluna */
     max-width: 1200px;
     /* Evita que o site estique demais em telas gigantes */
-    margin: 0 auto;
+  margin: 0 auto 60px auto;
 }
 
 .doces:hover {
@@ -335,21 +337,24 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #692004;
 }
 
 .nome-produto {
-    font-size: 26px;
+    font-size: 20px;
     /* Define o tamanho da fonte do nome do produto */
     color: #692004;
     /* Define a cor do texto do nome do produto como marrom */
     margin-top: 10px;
     /* Adiciona uma margem superior de 10 pixels ao nome do produto */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
 }
 
 .imagem {
     width: 100%;
-    height: 300px;
+    height: 380px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -379,26 +384,27 @@ h1 {
 }
 
 
-
 .rodape {
-    display: flex;
+   display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
     background-color: #ffa5b4;
-   padding: 25px 40px;
-    margin-top: 60px;
+    padding: 15px 90px;
+   
 }
+
 
 .logorodape-principal {
     display: flex;
     align-items: center;
     gap: 20px;
+    align-self: center;
 }
 
-/* ===== LOGO NO RODAPÉ ===== */
+
 .logorodape {
-    width: 150px;
+    width: 100px;
     height: auto;
     border-radius: 50%;
 }
@@ -407,23 +413,26 @@ h1 {
 .contato {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
 }
 
 
-.contato-titulo{
-    font-size: 22px;
+.contato-titulo {
+    font-size: 18px;
     color: #692004;
     font-family: "Playfair Display", serif;
     margin-bottom: 5px;
-}
+    padding: 5px 0;
 
+}
 
 .atendimento-titulo {
-    font-size: 22px;
+    font-size: 18px;
     color: #692004;
     font-family: "Playfair Display", serif;
     margin-bottom: 5px;
+    padding: 5px 0;
+   
 }
 
 
@@ -431,29 +440,35 @@ h1 {
     display: flex;
     align-items: center;
     gap: 12px;
+    
 }
 
 .item-contato img {
-    height: 50px;
+    height: 30px;
     object-fit: contain;
+    
 }
 
-.item-contato {
-    font-size: 20px;
+.item-contato p {
+    font-size: 15px;
     color: #692004;
-    line-height: 1.4; 
+    line-height: 1.4;
 
 }
 
 
 .horarios p {
-    font-size: 20px;
+    font-size: 15px;
     color: #692004;
     line-height: 1.4;
+    
 }
+
 
 .horarios {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
+    text-align: left;
 }
+

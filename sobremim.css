@@ -220,7 +220,7 @@ nav {
     /* Espaçamento interno: 5px acima/abaixo, 20px esquerda/direita */
     height: 40px;
     /* Altura fixa para consistência */
-    width: 380px;
+    width: 300px;
     /* Largura da barra de pesquisa */
 }
 
@@ -394,119 +394,90 @@ h2 {
 }
 
 
-
-/* Estilos para o rodapé da página */
 .rodape {
-    /* position: relative - permite posicionar elementos filhos em relação a este container */
-    position: relative;
-    /* display: flex - usa flexbox para organizar o conteúdo do rodapé */
-    display: flex;
-    /* justify-content: space-between - distribui os itens com espaço entre eles */
+   display: flex;
     justify-content: space-between;
-    /* align-items: center - centraliza os itens verticalmente */
-    align-items: center;
-    /* gap: 40px - adiciona 40 pixels de espaço entre os elementos do rodapé */
+    align-items: flex-start;
     gap: 40px;
-    /* background-color: #ffa5b4 - define a cor de fundo do rodapé como rosa */
     background-color: #ffa5b4;
-    /* padding: 120px 60px 40px 60px - adiciona espaço interno: 120px acima, 60px nas laterais, 40px abaixo */
-    padding: 120px 60px 40px 60px;
+    padding: 15px 90px;
+   
 }
 
-/* Estilos para o container do logo e do texto no rodapé */
+
 .logorodape-principal {
-    /* display: flex - usa flexbox para organizar a logo e o texto lado a lado */
     display: flex;
-    /* align-items: center - centraliza a logo e o texto verticalmente */
     align-items: center;
-    /* gap: 20px - adiciona 20 pixels de espaço entre a logo e o texto */
     gap: 20px;
+    align-self: center;
 }
 
-/* Estilos para a imagem do logo no rodapé */
+
 .logorodape {
-    /* width: 200px - define a largura do logo como 200 pixels */
-    width: 200px;
-    /* height: auto - mantém a proporção original da imagem */
+    width: 100px;
     height: auto;
-    /* border-radius: 50% - cria bordas arredondadas perfeitas (círculo) */
     border-radius: 50%;
 }
 
-/* Estilos para o container de contato */
+
 .contato {
-    /* display: flex - usa flexbox para organizar os itens de contato verticalmente */
     display: flex;
-    /* flex-direction: column - organiza os itens em coluna (um embaixo do outro) */
     flex-direction: column;
-    /* gap: 15px - adiciona 15 pixels de espaço entre os itens de contato */
-    gap: 15px;
-}
-
-/* Estilos para o título da seção de contato */
-.contato-titulo {
-    /* font-size: 24px - define o tamanho da fonte como 24 pixels */
-    font-size: 24px;
-    /* color: #692004 - define a cor do texto como marrom */
-    color: #692004;
-}
-
-/* Estilos para cada item individual de contato (telefone, email, etc) */
-.item-contato {
-    /* display: flex - usa flexbox para organizar o ícone e o texto lado a lado */
-    display: flex;
-    /* align-items: center - centraliza o ícone e o texto verticalmente */
-    align-items: center;
-    /* gap: 12px - adiciona 12 pixels de espaço entre o ícone e o texto */
-    gap: 12px;
-}
-
-/* Estilos para a imagem dos ícones de contato */
-.item-contato img {
-    /* height: 24px - define a altura do ícone como 24 pixels */
-    height: 50px;
-    /* object-fit: contain - ajusta a imagem dentro do espaço sem distorcer */
-    object-fit: contain;
-}
-
-/* Estilos para o texto dos itens de contato */
-.item-contato p {
-    /* font-size: 18px - define o tamanho da fonte como 18 pixels */
-    font-size: 18px;
-    /* color: #692004 - define a cor do texto como marrom */
-    color: #692004;
-    /* line-height: 1.2 - define o espaçamento entre linhas como 1,2 vezes o tamanho da fonte */
-    line-height: 1.2;
-}
-
-/* Estilos para o container de horários */
-.horarios {
-    /* display: flex - usa flexbox para organizar os horários */
-    display: flex;
-    /* flex-direction: column - organiza os horários em coluna (um embaixo do outro) */
-    flex-direction: column;
-    /* gap: 12px - adiciona 12 pixels de espaço entre os horários */
-    gap: 12px;
-    /* color: #692004 - define a cor padrão como marrom */
-    color: #692004;
-}
-
-/* Estilos para os parágrafos dentro de horários */
-.horarios p {
-    /* display: flex - usa flexbox para organizar o conteúdo do parágrafo */
-    display: flex;
-    /* flex-direction: column - organiza o conteúdo em coluna */
-    flex-direction: column;
-    /* gap: 8px - adiciona 8 pixels de espaço dentro do parágrafo */
     gap: 8px;
-    /* color: #692004 - define a cor do texto como marrom */
-    color: #692004;
 }
 
-/* Estilos para o título da seção de atendimento */
-.atendimento-titulo {
-    /* font-size: 24px - define o tamanho da fonte como 24 pixels */
-    font-size: 24px;
-    /* color: #692004 - define a cor do texto como marrom */
+
+.contato-titulo {
+    font-size: 18px;
     color: #692004;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+    padding: 5px 0;
+
+}
+
+.atendimento-titulo {
+    font-size: 18px;
+    color: #692004;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+    padding: 5px 0;
+   
+}
+
+
+.item-contato {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.item-contato img {
+    height: 30px;
+    object-fit: contain;
+    
+}
+
+.item-contato p {
+    font-size: 15px;
+    color: #692004;
+    line-height: 1.4;
+
+}
+
+
+.horarios p {
+    font-size: 15px;
+    color: #692004;
+    line-height: 1.4;
+    
+}
+
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
 }
