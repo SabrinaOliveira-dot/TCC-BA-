@@ -1,88 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./salgados.css">
-    <link rel="shourtcut icon" href="./Imagens/Design-sem-nome.ico" type="imagem/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./geladinhos.css">
+    <link rel="shortcut icon" href="./Imagens/Design-sem-nome.ico" type="image/x-icon">
+
     <title>Império dos Bolos, Doces e Salgados</title>
 </head>
+
 <body>
-    
     <header>
-        
-        <nav> <!-- Navegação do site -->
-            <div class="logo"> <!-- Div para o logo da loja -->
-                <img src="./Imagens/Logo confeitaria.png" alt="logo">
+        <nav>
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="./Imagens/Logo confeitaria.png" alt="logo">
+                </div>
+            </a>
+
+            <div class="links">
+                <a href="./index.html"> Loja </a>
+                <a href="./catalogos.html"> Catálogo </a>
+                <a href="./sobremim.html"> Sobre mim </a>
             </div>
 
-            <a href="./index.html"> Loja </a>
-            <a href="./catalogos.html"> Catálogo </a>
-    
-            <a href="./sobremim.html"> Sobre mim </a>
-        
-          
+            <form class="busca pesquisabusca-container">
+                <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
+                <input type="text" placeholder="O que você está buscando?">
+            </form>
         </nav>
     </header>
 
-   <main>
-   
-        <h1>Salgados</h1>
+    <main>
+    <h1>Salgados</h1>
 
     <section class="opcoes">
-       
-        <div class="produtos">
-        <div class="salgadinhos">
-            <img class="imagem" src="./Imagens/coxinha.jpg" alt="coxinha">
-            <h2 class="nome-produto">Mini Coxinhas</h2>
-
-             <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar coxinhas."
-             target="_blank"
-             class="botao-whatsapp">
-               <p>Fazer Pedido</p>
-    </a>    
-            
-        </div>
-
-        <div class="salgadinhos">
-            <img class="imagem" src="./Imagens/bolinho-de-queijo.jpg" alt="bolinho-de-queijo" >
-            <h2 class="nome-produto">Bolinha de Queijo</h2>
-            
-             <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar bolinhas de queijo."
-             target="_blank"
-             class="botao-whatsapp">
-               <p>Fazer Pedido</p>
-             </a>
-
-        </div>
-
-        <div class="salgadinhos">
-            <img class="imagem" src="./Imagens/kibe.webp" alt="quibe">
-            <h2 class="nome-produto">Quibe</h2>
-            
-             <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar quibes."
-             target="_blank"
-             class="botao-whatsapp">
-               <p>Fazer Pedido</p>
-             </a>
-
-        </div>
-
      
-    </div>
+        <div class="produtos">
+            
+            <div class="doces">
+                <img class="imagem" src="./Imagens/coxinha.jpg" alt="Mini-coxinha">
+                <h2 class="nome-produto">Geladinhos de Paçoca</h2> 
 
+                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar mini coxinhas."
+                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
+            </div>
+
+            <div class="doces">
+                <img class="imagem" src="./Imagens/bolinho-de-queijo.jpg" alt="bolinhas-de-quiejo">
+                <h2 class="nome-produto">Bolinhas de queijo </h2>
+                
+                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar bolinhas de queijo."
+                   target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+            </div>
+
+            <div class="doces">
+                <img class="imagem" src="./Imagens/kibe.webp" alt="quibe">
+                <h2 class="nome-produto">Quibe</h2>
+                
+                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar alguns quibes."
+                   target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+            </div>
+
+
+        </div>
+  
     </section>
-
-   </main>
+</main>
 
 
     <footer class="rodape">
-      
-        <div class="logorodape-principal"> <!--Essa aqui é da minha barra-->
-            <img class="logorodape" src="./Imagens/Logo confeitaria.png" alt="logo">
+        <div class="logorodape-principal"> <img class="logorodape" src="./Imagens/Logo confeitaria.png" alt="logo">
         </div>
 
-        <div class="contato"> <!--aqui é do meu titulo-->
+        <div class="contato">
             <h3 class="contato-titulo">Entre em contato</h3>
 
             <div class="item-contato">
@@ -97,7 +93,7 @@
 
             <div class="item-contato">
                 <img src="./Imagens/mapa.png" alt="Localização">
-                <p>Rua Exemplo, 123 - Santo André, SP</p>
+                <p>Rua Jão Dominic, 159 casa - Santa Catarina </p>
             </div>
         </div>
 
