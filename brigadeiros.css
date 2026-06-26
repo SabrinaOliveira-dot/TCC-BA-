@@ -28,10 +28,10 @@
 body {
     background-color: #692004;
     background-image: url('./Imagens/Banner\ fundo\ rosa.png');
-    background-size: 26%; 
-    background-repeat: repeat; 
-    background-attachment: fixed; 
-    background-position: top left; 
+    background-size: 26%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top left;
 }
 
 header {
@@ -257,11 +257,11 @@ nav {
 
 
 .icone-lupa {
-    height: 18px;
+     height: 60px;
     /* Altura do ícone */
-    width: 20px;
+    width: 50px;
     /* Largura do ícone */
-    margin-right: 20px;
+    margin-right: 5px;
     /* Espaço entre o ícone e o input */
     object-fit: contain;
     /* Mantém a proporção da imagem sem distorcer */
@@ -316,7 +316,7 @@ h1 {
     /* Espaço entre os doces */
     justify-items: center;
     /* Centraliza os doces dentro de cada coluna */
-    max-width: 1200px;
+    max-width: 1130px;
     /* Evita que o site estique demais em telas gigantes */
     margin: 0 auto 60px auto;
 }
@@ -329,7 +329,7 @@ h1 {
 /* Adiciona um efeito de transição suave ao transformar o item quando o mouse passa sobre ele */
 
 .opcoes {
-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: transparent;

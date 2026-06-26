@@ -263,11 +263,11 @@ nav {
 
 
 .icone-lupa {
-    height: 18px;
+   height: 60px;
     /* Altura do ícone */
-    width: 20px;
+    width: 50px;
     /* Largura do ícone */
-    margin-right: 20px;
+    margin-right: 5px;
     /* Espaço entre o ícone e o input */
     object-fit: contain;
     /* Mantém a proporção da imagem sem distorcer */
@@ -322,16 +322,16 @@ h1 {
 }
 
 .produtos {
-    display: grid;
+   display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* Cria exatamente 3 colunas iguais */
     gap: 30px;
     /* Espaço entre os doces */
     justify-items: center;
     /* Centraliza os doces dentro de cada coluna */
-    max-width: 1200px;
+    max-width: 1130px;
     /* Evita que o site estique demais em telas gigantes */
-   margin: 0 auto 60px auto;
+    margin: 0 auto 60px auto;
 }
 
 .doces:hover {

@@ -161,11 +161,11 @@ nav {
 
 
 .icone-lupa {
-    height: 18px;
+    height: 60px;
     /* Altura do ícone */
-    width: 20px;
+    width: 50px;
     /* Largura do ícone */
-    margin-right: 20px;
+    margin-right: 5px;
     /* Espaço entre o ícone e o input */
     object-fit: contain;
     /* Mantém a proporção da imagem sem distorcer */
@@ -237,7 +237,7 @@ nav {
     color: #692004;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
     gap: 20px;
     margin: 200px auto 60px auto;
     /* Centraliza o bloco na tela */
@@ -271,6 +271,8 @@ main {
     /* Espaço de 30px entre produtos */
     padding: 20px 40px;
     /* Espaçamento interno */
+    max-width: 1130px;  
+    margin: 0 auto;
 }
 
 
@@ -301,7 +303,7 @@ main {
 .bolos {
     width: 100%;
     /* Ocupa 100% da largura do card */
-    height: 450px;
+    height: 300px;
     /* Altura fixa para consistência */
     object-fit: cover;
     /* Imagem se ajusta mantendo proporção */

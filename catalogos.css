@@ -7,7 +7,7 @@
 
 
 * {
-  
+
     box-sizing: border-box;
     /* Inclui borda e padding na largura total do elemento */
     margin: 0;
@@ -17,7 +17,7 @@
 }
 
 body {
-   
+
     background-color: #692004;
     /* Define cor de fundo em toda a página */
 }
@@ -51,8 +51,8 @@ nav {
     /* Não quebra itens em nova linha (mantém uma linha) */
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
- 
- 
+
+
     font-style: normal;
 
 }
@@ -164,11 +164,11 @@ nav {
 
 
 .icone-lupa {
-    height: 18px;
+    height: 60px;
     /* Altura do ícone */
-    width: 20px;
+    width: 50px;
     /* Largura do ícone */
-    margin-right: 20px;
+    margin-right: 5px;
     /* Espaço entre o ícone e o input */
     object-fit: contain;
     /* Mantém a proporção da imagem sem distorcer */
@@ -177,29 +177,29 @@ nav {
 
 
 main {
-     /*Seleciona o elemento principal da página*/ 
+    /*Seleciona o elemento principal da página*/
     display: grid;
     /* Define o layout do elemento principal como bloco */
     padding: 40px 20px;
     margin: 0 auto;
-    
+
     width: 100%;
     max-width: 100%;
-    
+
 
     /* Define um layout de grade com 3 colunas de largura igual */
     gap: 40px;
     /* Adiciona um espaço de 20 pixels entre os itens dentro do elemento principal*/
     justify-content: center;
 
-    
-    /* Define a largura máxima do elemento principal para se ajustar ao conteúdo */
- 
-} 
 
-h1{
-    color:white;
-    display:flex;
+    /* Define a largura máxima do elemento principal para se ajustar ao conteúdo */
+
+}
+
+h1 {
+    color: white;
+    display: flex;
     justify-content: center;
 }
 
@@ -212,18 +212,19 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 100%;
 
 
 }
 
 
-.produto:hover{
+.produto:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-}/* Adiciona um efeito de transição suave ao transformar o item quando o mouse passa sobre ele */
+}
+
+/* Adiciona um efeito de transição suave ao transformar o item quando o mouse passa sobre ele */
 
 .produto img {
     width: 100%;
@@ -242,7 +243,7 @@ h1{
     margin: 0 auto;
 }
 
-.catalogos{
+.catalogos {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -264,106 +265,106 @@ h1{
 
 
 .rodape {
- 
+
     display: flex;
-  
+
     justify-content: space-between;
-     align-items: flex-start;
-     gap: 40px;
-     background-color: #ffa5b4;
-     padding: 15px 90px;
-    
- }
- 
- 
- .logorodape-principal {
-  
+    align-items: flex-start;
+    gap: 40px;
+    background-color: #ffa5b4;
+    padding: 15px 90px;
+
+}
+
+
+.logorodape-principal {
+
     display: flex;
-  
+
     align-items: center;
-     gap: 20px;
-     align-self: center;
- }
- 
- 
- .logorodape {
-     width: 100px;
-     height: auto;
-  
-     border-radius: 50%;
- 
-    }
- 
- 
+    gap: 20px;
+    align-self: center;
+}
 
- .contato {
- 
+
+.logorodape {
+    width: 100px;
+    height: auto;
+
+    border-radius: 50%;
+
+}
+
+
+
+.contato {
+
     display: flex;
-     flex-direction: column;
-     gap: 8px;
- }
- 
- 
- .contato-titulo {
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.contato-titulo {
     font-size: 18px;
-     color: #692004;
-     font-family: "Playfair Display", serif;
-     margin-bottom: 5px;
-     padding: 5px 0;
- 
- }
- 
- .atendimento-titulo {
-     font-size: 18px;
-     color: #692004;
-     font-family: "Playfair Display", serif;
-     margin-bottom: 5px;
-     padding: 5px 0;
-    
- }
- 
- 
- .item-contato {
-    
+    color: #692004;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+    padding: 5px 0;
+
+}
+
+.atendimento-titulo {
+    font-size: 18px;
+    color: #692004;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+    padding: 5px 0;
+
+}
+
+
+.item-contato {
+
     display: flex;
-     align-items: center;
-     gap: 12px;
-     
- }
- 
- .item-contato img {
-     height: 30px;
-     object-fit: contain;
-     
- }
- 
- .item-contato p {
-     font-size: 15px;
-     color: #692004;
-     line-height: 1.4;
- 
- }
- 
+    align-items: center;
+    gap: 12px;
 
- 
+}
 
- .horarios p {
-     font-size: 15px;
-     color: #692004;
-     line-height: 1.4;
-     
- }
- 
- 
- .horarios {
-     display: flex;
-     flex-direction: column;
-     gap: 8px;
-     text-align: left;
- }
+.item-contato img {
+    height: 30px;
+    object-fit: contain;
+
+}
+
+.item-contato p {
+    font-size: 15px;
+    color: #692004;
+    line-height: 1.4;
+
+}
 
 
- /* RESPONSIVIDADE PARA CELULAR */
+
+
+.horarios p {
+    font-size: 15px;
+    color: #692004;
+    line-height: 1.4;
+
+}
+
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+
+/* RESPONSIVIDADE PARA CELULAR */
 @media screen and (max-width: 768px) {
 
     nav {
@@ -457,7 +458,7 @@ h1{
         font-size: 16px;
     }
 
-    
+
 
 }
 
