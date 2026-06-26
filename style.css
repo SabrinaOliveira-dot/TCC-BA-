@@ -309,6 +309,8 @@ main {
     /* Imagem se ajusta mantendo proporção */
     border-radius: 5px;
     /* Bordas ligeiramente arredondadas */
+     border: 4px solid #ffa5b4; /* Cria a borda rosa de 4px */
+    box-sizing: border-box;
 }
 
 .nome-produto {

@@ -160,6 +160,9 @@ nav {
 .pesquisabusca-container input::placeholder {
     color: #ffffff;
     /* Deixa o texto de sugestão em branco e legível */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 
@@ -207,14 +210,13 @@ h1 {
 .produto {
     background-color: #fff;
     border-radius: 12px;
-    padding: 15px;
-    height: 300px;
+    padding: 20px;
+    min-height: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-
-
 }
 
 
@@ -224,14 +226,16 @@ h1 {
     transition: transform 0.3s ease;
 }
 
-/* Adiciona um efeito de transição suave ao transformar o item quando o mouse passa sobre ele */
+
 
 .produto img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     display: block;
+    border: 4px solid #ffa5b4; /* Cria a borda rosa de 4px */
+    box-sizing: border-box;
 }
 
 .produtos {

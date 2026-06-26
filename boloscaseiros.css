@@ -294,11 +294,12 @@ h1 {
 
 
 .doces {
-   background-color: #fff;
+  background-color: #fff;
     padding: 15px;
-    padding-bottom: 30px; /* ADICIONADO: Mais espaço em branco no fundo do cartão */
+    padding-bottom: 30px;
     border-radius: 10px;
     width: 100%;
+    min-height: 500px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,10 +307,12 @@ h1 {
 }
 
 .doces img {
-    width: 100%;
-    height: 300px;
+   width: 100%;
+    height: 350px; 
     object-fit: cover;
     border-radius: 10px;
+    border: 4px solid #ffa5b4;
+    box-sizing: border-box;
 }
 
 .produtos {

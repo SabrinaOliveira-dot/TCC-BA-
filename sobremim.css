@@ -120,7 +120,7 @@ nav {
 
     border-radius: 50%;
 
-    
+
 
 }
 
@@ -248,13 +248,13 @@ nav {
     /* Deixa o texto de sugestão "O que você está buscando" em branco e legível */
 }
 
-/* Ícone de lupa (busca) */
+
 .icone-lupa {
-    height: 18px;
+    height: 60px;
     /* Altura do ícone */
-    width: 20px;
+    width: 50px;
     /* Largura do ícone */
-    margin-right: 20px;
+    margin-right: 5px;
     /* Espaço entre o ícone e o input */
     object-fit: contain;
     /* Mantém a proporção da imagem sem distorcer */
@@ -395,13 +395,13 @@ h2 {
 
 
 .rodape {
-   display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
     background-color: #ffa5b4;
     padding: 15px 90px;
-   
+
 }
 
 
@@ -442,7 +442,7 @@ h2 {
     font-family: "Playfair Display", serif;
     margin-bottom: 5px;
     padding: 5px 0;
-   
+
 }
 
 
@@ -450,13 +450,13 @@ h2 {
     display: flex;
     align-items: center;
     gap: 12px;
-    
+
 }
 
 .item-contato img {
     height: 30px;
     object-fit: contain;
-    
+
 }
 
 .item-contato p {
@@ -471,7 +471,7 @@ h2 {
     font-size: 15px;
     color: #692004;
     line-height: 1.4;
-    
+
 }
 
 
