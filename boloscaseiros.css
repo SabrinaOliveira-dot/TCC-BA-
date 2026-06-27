@@ -352,42 +352,25 @@ h1 {
     gap: 8px;
     text-align: left;
 }
-
-/* ==========================================================================
-   MEDIA QUERIES - RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS (CELULARES E TABLETS)
-   ========================================================================== */
-
-/* Ajustes para Tablets e telas intermediárias */
-@media screen and (max-width: 1024px) {
-    .produtos {
-        grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
-        padding: 0 20px;
-    }
-    
-    .links a {
-        padding: 8px 30px; /* Reduz o tamanho lateral dos botões */
-        margin: 10px;
-    }
-}
-
 /* Ajustes críticos para Celulares (telas de até 768px) */
 @media screen and (max-width: 768px) {
     body {
-        background-size: 50%; /* Reajusta a imagem de fundo para ficar visível */
+        background-size: 50%; 
     }
 
     header {
-        position: static; /* Muda para estático no celular para que o menu empilhado não cubra os produtos */
+        position: static; /* Essencial para o menu não cobrir os produtos no celular */
     }
 
     main {
-        margin-top: 20px; /* Reduz o espaçamento superior, pois o cabeçalho mudou de comportamento */
+        margin-top: 20px; 
     }
 
     nav {
-        flex-direction: column; /* Organiza logo, links e busca em uma linha vertical única */
+        flex-direction: column; /* Faz logo, botões e busca virarem uma lista vertical */
         padding: 20px;
         gap: 15px;
+        flex-wrap: wrap; /* AGORA PERMITE QUEBRA DE LINHA SE NECESSÁRIO */
     }
 
     .logo {
@@ -399,49 +382,63 @@ h1 {
     }
 
     .links {
-        flex-direction: column; /* Alinha os botões de páginas um abaixo do outro */
+        flex-direction: column; 
         width: 100%;
         gap: 8px;
     }
 
     .links a {
-        margin: 0;
-        width: 100%; /* Botões preenchem a largura da tela do celular */
+        margin: 5px 0;
+        width: 100%; /* Botões ocupam a largura total da tela do celular */
         text-align: center;
-        padding: 12px 20px;
+        padding: 12px 20px; /* Reduz o recuo exagerado que vinha do PC */
     }
 
     .pesquisabusca-container {
-        width: 100%; /* Barra de busca se adapta ao espaço do celular */
+        width: 100%; 
         max-width: 100%;
     }
 
     h1 {
-        font-size: 26px; /* Ajusta o tamanho da fonte do título principal */
+        font-size: 26px; 
         width: 90%;
         text-align: center;
         padding: 10px 15px;
+        margin: 20px auto;
     }
 
+    /* CORREÇÃO DOS QUADRADOS BRANCOS */
     .produtos {
-        grid-template-columns: 1fr; /* Muda para apenas 1 coluna: um doce por linha */
-        gap: 20px;
+        grid-template-columns: 1fr !important; /* FORÇA 1 PRODUTO POR LINHA */
+        width: 100%;
+        padding: 0 20px;
+        gap: 25px;
     }
 
     .doces {
-        min-height: auto; /* Remove a limitação de altura vertical fixada anteriormente */
+        width: 100%;
+        max-width: 340px; /* Define um tamanho limite bonito para o card não esticar até as bordas */
+        margin: 0 auto;  /* Centraliza o card na tela do celular */
+        min-height: auto; 
     }
 
     .doces img {
-        height: 260px; /* Reduz sutilmente a altura da imagem dos produtos */
+        height: 280px; /* Ajusta a proporção da imagem para não achatar */
+    }
+    
+    .nome-produto {
+        text-align: center;
+        font-size: 18px;
     }
 
+    /* CORREÇÃO DO RODAPÉ */
     .rodape {
-        flex-direction: column; /* Transforma o rodapé horizontal em vertical */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
         padding: 30px 20px;
         gap: 25px;
+        width: 100%;
     }
 
     .logorodape-principal {
@@ -451,11 +448,13 @@ h1 {
 
     .contato, .horarios {
         align-items: center;
+        text-align: center;
         width: 100%;
     }
 
     .item-contato {
         flex-direction: column;
         gap: 6px;
+        justify-content: center;
     }
 }
