@@ -6,33 +6,25 @@
 
 * {
     box-sizing: border-box;
-    /* Inclui borda e padding na largura total do elemento */
     margin: 0;
-    /* Remove margens externas padrão */
     padding: 0;
-    /* Remove espaçamento interno padrão */
 }
 
 body {
     background-color: #692004;
     background-image: url('./Imagens/Banner fundo rosa.png');
-    background-size: 26%; 
-    background-repeat: repeat; 
-    background-attachment: fixed; 
-    background-position: top left; 
+    background-size: 26%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top left;
 }
 
 header {
     position: fixed;
-    /* Fixa o cabeçalho no topo, sem se mover ao fazer scroll */
     top: 0;
-    /* Posiciona no topo da página */
     left: 0;
-    /* Alinha ao lado esquerdo */
     width: 100%;
-    /* Ocupa 100% da largura disponível */
     z-index: 100;
-    /* Garante que fique sobre outros elementos (profundidade) */
 }
 
 main {
@@ -51,9 +43,7 @@ nav {
     align-items: center;
     /* Alinha itens ao centro na vertical */
     padding: 2px 40px;
-    /* Espaçamento: 2px acima/abaixo, 40px esquerda/direita */
     flex-wrap: nowrap;
-    /* Não quebra itens em nova linha (mantém uma linha) */
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -136,7 +126,7 @@ nav {
     /* Largura da barra de pesquisa */
 }
 
-/* Campo de entrada (input) da pesquisa */
+
 .pesquisabusca-container input {
     flex: 1;
     /* Faz o input ocupar todo o espaço restante do container */
@@ -151,39 +141,28 @@ nav {
     color: #ffffff;
     /* Cor do texto digitado em branco */
     font-size: 16px;
-    /* Tamanho do texto confortável para leitura */
 }
 
-/* Estilo do texto placeholder (sugestão) do input */
 .pesquisabusca-container input::placeholder {
     color: #ffffff;
-    /* Deixa o texto de sugestão "O que você está buscando" em branco e legível */
 }
 
-/* Ícone de lupa (busca) */
 .icone-lupa {
     height: 60px;
-    /* Altura do ícone */
     width: 50px;
-    /* Largura do ícone */
     margin-right: 5px;
-    /* Espaço entre o ícone e o input */
     object-fit: contain;
-    /* Mantém a proporção da imagem sem distorcer */
 }
 
 h1 {
     display: flex;
-    /* Alterado para flex */
     color: #692004;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     gap: 20px;
     margin: 40px auto;
-    /* Ajustado margens para melhor espaçamento abaixo do header */
     width: max-content;
-    /* Garante que o fundo envolva apenas o texto e fique centralizado */
     background-color: #ffa5b4;
     border: 3px solid #ffffff;
     border-radius: 15px;
@@ -197,7 +176,7 @@ h1 {
     padding-bottom: 30px;
     border-radius: 10px;
     width: 100%;
-    min-height: 500px; 
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,7 +186,7 @@ h1 {
 
 .doces img {
     width: 100%;
-    height: 350px; 
+    height: 350px;
     object-fit: cover;
     border-radius: 10px;
     border: 4px solid #ffa5b4;
@@ -355,7 +334,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
     body {
-        background-size: 50%; 
+        background-size: 50%;
     }
 
     header {
@@ -363,53 +342,53 @@ h1 {
     }
 
     main {
-        margin-top: 20px; 
+        margin-top: 20px;
     }
 
     nav {
-        flex-direction: column; 
+        flex-direction: column;
         padding: 20px;
         gap: 15px;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 
     .logo {
         width: 80px;
     }
-    
+
     .logo img {
         width: 80px;
     }
 
     .links {
-        flex-direction: column; 
+        flex-direction: column;
         width: 100%;
         gap: 8px;
     }
 
     .links a {
         margin: 5px 0;
-        width: 100%; 
+        width: 100%;
         text-align: center;
-        padding: 12px 20px; 
+        padding: 12px 20px;
     }
 
     .pesquisabusca-container {
-        width: 100%; 
+        width: 100%;
         max-width: 100%;
     }
 
     h1 {
-        font-size: 26px; 
+        font-size: 26px;
         width: 90%;
         text-align: center;
         padding: 10px 15px;
         margin: 20px auto;
     }
 
-   
+
     .produtos {
-        grid-template-columns: 1fr !important; 
+        grid-template-columns: 1fr !important;
         width: 100%;
         padding: 0 20px;
         gap: 25px;
@@ -417,23 +396,23 @@ h1 {
 
     .doces {
         width: 100%;
-        max-width: 340px; 
-        margin: 0 auto;  
-        min-height: auto; 
+        max-width: 340px;
+        margin: 0 auto;
+        min-height: auto;
     }
 
     .doces img {
         height: 280px;
     }
-    
+
     .nome-produto {
         text-align: center;
         font-size: 18px;
     }
 
-    
+
     .rodape {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 30px 20px;
@@ -446,7 +425,13 @@ h1 {
         gap: 10px;
     }
 
-    .contato, .horarios {
+    .contato {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .horarios {
         align-items: center;
         text-align: center;
         width: 100%;

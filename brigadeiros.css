@@ -11,15 +11,10 @@
 * {
 
     box-sizing: border-box;
-
     /* Inclui borda e padding na largura total do elemento */
-
     margin: 0;
-
     /* Remove margens externas padrão */
-
     padding: 0;
-
     /* Remove espaçamento interno padrão */
 }
 
@@ -35,23 +30,14 @@ body {
 header {
 
     position: fixed;
-
     /* Fixa o cabeçalho no topo, sem se mover ao fazer scroll */
-
     top: 0;
-
     /* Posiciona no topo da página */
-
     left: 0;
-
     /* Alinha ao lado esquerdo */
-
     width: 100%;
-
     /* Ocupa 100% da largura disponível */
-
     z-index: 100;
-
     /* Garante que fique sobre outros elementos (profundidade) */
 
 }
@@ -65,29 +51,17 @@ main {
 nav {
 
     display: flex;
-
     /* Usa flexbox para organizar elementos em linha */
-
     background-color: #ffa5b4;
-
     /* Define fundo rosa */
-
     justify-content: space-between;
-
     /* Distribui espaço entre itens horizontalmente */
-
     align-items: center;
-
     /* Alinha itens ao centro na vertical */
-
     padding: 2px 40px;
-
     /* Espaçamento: 2px acima/abaixo, 40px esquerda/direita */
-
     flex-wrap: nowrap;
-
     /* Não quebra itens em nova linha (mantém uma linha) */
-
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 25px;
@@ -99,15 +73,10 @@ nav {
 .logo {
 
     position: relative;
-
     /* Define posicionamento relativo para alocar bem na nav */
-
     width: 100px;
-
     /* Largura da logo */
-
     height: auto;
-
     /* Altura ajustada automaticamente proporcionalmente */
 
 }
@@ -117,11 +86,8 @@ nav {
 .logo img {
 
     width: 100px;
-
     /* Define largura da imagem da logo */
-
     border-radius: 50%;
-
     /* Deixa a imagem circular (redonda) */
 
 }
@@ -129,15 +95,10 @@ nav {
 .links {
 
     display: flex;
-
     /* Usa flexbox para alinhar links horizontalmente */
-
     justify-content: center;
-
     /* Centraliza os links horizontalmente */
-
     flex-grow: 1;
-
     /* Ocupa o espaço restante disponível na nav */
 
 
@@ -147,55 +108,29 @@ nav {
 .links a {
 
     display: inline-block;
-
     /* Permite dar width/height em um elemento inline */
-
     text-decoration: none;
-
     /* Remove o sublinhado padrão dos links */
-
     background-color: #692004;
-
-    /* Fundo marrom nos botões */
-
+    /* Fundo marom nos botões */
     color: #ffffff;
-
     /* Texto branco */
-
     font-family: "Playfair Display", serif;
-
-    /* Fonte elegante para titulos */
-
     font-size: 16px;
-
     /* Tamanho do texto */
-
     font-weight: bold;
-
     /* Deixa o texto mais grosso/marcado */
-
     border: 2px solid #692004;
-
     /* Borda marrom ao redor */
-
     padding: 8px 60px;
-
     /* Espaço interno: 8px acima/abaixo, 30px esquerda/direita */
-
     border-radius: 60px;
-
     /* Deixa as bordas muito arredondadas (botão arredondado) */
-
     margin: 20px;
-
     /* Espaço externo: 15px esquerda/direita */
-
     white-space: nowrap;
-
     /* Evita quebra de texto em várias linhas */
-
     transition: transform 0.2s ease-in-out;
-
     /* Suaviza transformações em 0.2 segundos */
 
 
@@ -205,7 +140,6 @@ nav {
 .links a:hover {
 
     transform: scale(1.05);
-
     /* Aumenta o botão em 5% quando mouse passa sobre */
 
 
