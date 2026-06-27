@@ -1,35 +1,21 @@
 /* #692004 - Marrom */
-
-/* #ffa5b4 - Rosa*/
-
-/* #ffffff - c */
+/* #ffa5b4 - Rosa */
+/* #ffffff - Branco */
 
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech&display=swap');
-/*titulo*/
-
 
 * {
-
     box-sizing: border-box;
-
     /* Inclui borda e padding na largura total do elemento */
-
     margin: 0;
-
     /* Remove margens externas padrão */
-
     padding: 0;
-
     /* Remove espaçamento interno padrão */
-
 }
-
 
 body {
     background-color: #692004;
-    background-image: url('./Imagens/Banner\ fundo\ rosa.png');
+    background-image: url('./Imagens/Banner fundo rosa.png');
     background-size: 26%; 
     background-repeat: repeat; 
     background-attachment: fixed; 
@@ -37,27 +23,16 @@ body {
 }
 
 header {
-
     position: fixed;
-
     /* Fixa o cabeçalho no topo, sem se mover ao fazer scroll */
-
     top: 0;
-
     /* Posiciona no topo da página */
-
     left: 0;
-
     /* Alinha ao lado esquerdo */
-
     width: 100%;
-
     /* Ocupa 100% da largura disponível */
-
     z-index: 100;
-
     /* Garante que fique sobre outros elementos (profundidade) */
-
 }
 
 main {
@@ -67,154 +42,81 @@ main {
 }
 
 nav {
-
     display: flex;
-
     /* Usa flexbox para organizar elementos em linha */
-
     background-color: #ffa5b4;
-
     /* Define fundo rosa */
-
     justify-content: space-between;
-
     /* Distribui espaço entre itens horizontalmente */
-
     align-items: center;
-
     /* Alinha itens ao centro na vertical */
-
     padding: 2px 40px;
-
     /* Espaçamento: 2px acima/abaixo, 40px esquerda/direita */
-
     flex-wrap: nowrap;
-
     /* Não quebra itens em nova linha (mantém uma linha) */
-
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 25px;
+    font-weight: normal;
     font-style: normal;
-
 }
-
 
 .logo {
-
     position: relative;
-
     /* Define posicionamento relativo para alocar bem na nav */
-
     width: 100px;
-
     /* Largura da logo */
-
     height: auto;
-
     /* Altura ajustada automaticamente proporcionalmente */
-
 }
 
-
-
 .logo img {
-
     width: 100px;
-
     /* Define largura da imagem da logo */
-
     border-radius: 50%;
-
     /* Deixa a imagem circular (redonda) */
-
 }
 
 .links {
-
     display: flex;
-
     /* Usa flexbox para alinhar links horizontalmente */
-
     justify-content: center;
-
     /* Centraliza os links horizontalmente */
-
     flex-grow: 1;
-
     /* Ocupa o espaço restante disponível na nav */
-
-
-
 }
 
-
 .links a {
-
     display: inline-block;
-
     /* Permite dar width/height em um elemento inline */
-
     text-decoration: none;
-
     /* Remove o sublinhado padrão dos links */
-
     background-color: #692004;
-
     /* Fundo marrom nos botões */
-
     color: #ffffff;
-
     /* Texto branco */
-
     font-family: "Playfair Display", serif;
-
     /* Fonte elegante para titulos */
-
     font-size: 16px;
-
     /* Tamanho do texto */
-
     font-weight: bold;
-
     /* Deixa o texto mais grosso/marcado */
-
     border: 2px solid #692004;
-
     /* Borda marrom ao redor */
-
     padding: 8px 60px;
-
-    /* Espaço interno: 8px acima/abaixo, 30px esquerda/direita */
-
+    /* Espaço interno: 8px acima/abaixo, 60px esquerda/direita */
     border-radius: 60px;
-
     /* Deixa as bordas muito arredondadas (botão arredondado) */
-
     margin: 20px;
-
-    /* Espaço externo: 15px esquerda/direita */
-
+    /* Espaço externo */
     white-space: nowrap;
-
     /* Evita quebra de texto em várias linhas */
-
     transition: transform 0.2s ease-in-out;
-
     /* Suaviza transformações em 0.2 segundos */
-
-
-
 }
 
 .links a:hover {
-
     transform: scale(1.05);
-
     /* Aumenta o botão em 5% quando mouse passa sobre */
-
-
-
 }
 
 .pesquisabusca-container {
@@ -260,7 +162,7 @@ nav {
 
 /* Ícone de lupa (busca) */
 .icone-lupa {
-   height: 60px;
+    height: 60px;
     /* Altura do ícone */
     width: 50px;
     /* Largura do ícone */
@@ -269,7 +171,6 @@ nav {
     object-fit: contain;
     /* Mantém a proporção da imagem sem distorcer */
 }
-
 
 h1 {
     display: flex;
@@ -290,11 +191,8 @@ h1 {
     font-family: "Playfair Display", serif;
 }
 
-
-
-
 .doces {
-  background-color: #fff;
+    background-color: #fff;
     padding: 15px;
     padding-bottom: 30px;
     border-radius: 10px;
@@ -304,10 +202,11 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    transition: transform 0.3s ease;
 }
 
 .doces img {
-   width: 100%;
+    width: 100%;
     height: 350px; 
     object-fit: cover;
     border-radius: 10px;
@@ -330,13 +229,9 @@ h1 {
 
 .doces:hover {
     transform: translateY(-10px);
-    transition: transform 0.3s ease;
 }
 
-/* Adiciona um efeito de transição suave ao transformar o item quando o mouse passa sobre ele */
-
 .opcoes {
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -352,7 +247,6 @@ h1 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
-
 }
 
 .imagem {
@@ -362,19 +256,18 @@ h1 {
     border-radius: 10px;
 }
 
-
 .botao-pedido {
     display: inline-block;
     text-decoration: none;
     background-color: #ffa5b4;
-    /* Fundo Marrom */
+    /* Fundo Rosa */
     color: #692004;
-    /* Texto Branco */
+    /* Texto Marrom */
     font-family: "Playfair Display", serif;
     font-size: 16px;
     font-weight: bold;
     border: 2px solid #692004;
-    /* Borda Rosa */
+    /* Borda Marrom */
     padding: 10px 30px;
     border-radius: 30px;
     /* Botão arredondado */
@@ -386,17 +279,14 @@ h1 {
     transition: transform 0.2s ease-in-out, background-color 0.2s;
 }
 
-
 .rodape {
-   display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
     background-color: #ffa5b4;
     padding: 15px 90px;
-   
 }
-
 
 .logorodape-principal {
     display: flex;
@@ -405,13 +295,11 @@ h1 {
     align-self: center;
 }
 
-
 .logorodape {
     width: 100px;
     height: auto;
     border-radius: 50%;
 }
-
 
 .contato {
     display: flex;
@@ -419,14 +307,12 @@ h1 {
     gap: 8px;
 }
 
-
 .contato-titulo {
     font-size: 18px;
     color: #692004;
     font-family: "Playfair Display", serif;
     margin-bottom: 5px;
     padding: 5px 0;
-
 }
 
 .atendimento-titulo {
@@ -435,38 +321,30 @@ h1 {
     font-family: "Playfair Display", serif;
     margin-bottom: 5px;
     padding: 5px 0;
-   
 }
-
 
 .item-contato {
     display: flex;
     align-items: center;
     gap: 12px;
-    
 }
 
 .item-contato img {
     height: 30px;
     object-fit: contain;
-    
 }
 
 .item-contato p {
     font-size: 15px;
     color: #692004;
     line-height: 1.4;
-
 }
-
 
 .horarios p {
     font-size: 15px;
     color: #692004;
     line-height: 1.4;
-    
 }
-
 
 .horarios {
     display: flex;
@@ -475,3 +353,109 @@ h1 {
     text-align: left;
 }
 
+/* ==========================================================================
+   MEDIA QUERIES - RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS (CELULARES E TABLETS)
+   ========================================================================== */
+
+/* Ajustes para Tablets e telas intermediárias */
+@media screen and (max-width: 1024px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
+        padding: 0 20px;
+    }
+    
+    .links a {
+        padding: 8px 30px; /* Reduz o tamanho lateral dos botões */
+        margin: 10px;
+    }
+}
+
+/* Ajustes críticos para Celulares (telas de até 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 50%; /* Reajusta a imagem de fundo para ficar visível */
+    }
+
+    header {
+        position: static; /* Muda para estático no celular para que o menu empilhado não cubra os produtos */
+    }
+
+    main {
+        margin-top: 20px; /* Reduz o espaçamento superior, pois o cabeçalho mudou de comportamento */
+    }
+
+    nav {
+        flex-direction: column; /* Organiza logo, links e busca em uma linha vertical única */
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+    
+    .logo img {
+        width: 80px;
+    }
+
+    .links {
+        flex-direction: column; /* Alinha os botões de páginas um abaixo do outro */
+        width: 100%;
+        gap: 8px;
+    }
+
+    .links a {
+        margin: 0;
+        width: 100%; /* Botões preenchem a largura da tela do celular */
+        text-align: center;
+        padding: 12px 20px;
+    }
+
+    .pesquisabusca-container {
+        width: 100%; /* Barra de busca se adapta ao espaço do celular */
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 26px; /* Ajusta o tamanho da fonte do título principal */
+        width: 90%;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr; /* Muda para apenas 1 coluna: um doce por linha */
+        gap: 20px;
+    }
+
+    .doces {
+        min-height: auto; /* Remove a limitação de altura vertical fixada anteriormente */
+    }
+
+    .doces img {
+        height: 260px; /* Reduz sutilmente a altura da imagem dos produtos */
+    }
+
+    .rodape {
+        flex-direction: column; /* Transforma o rodapé horizontal em vertical */
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .logorodape-principal {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contato, .horarios {
+        align-items: center;
+        width: 100%;
+    }
+
+    .item-contato {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
