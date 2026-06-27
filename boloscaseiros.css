@@ -352,14 +352,14 @@ h1 {
     gap: 8px;
     text-align: left;
 }
-/* Ajustes críticos para Celulares (telas de até 768px) */
+
 @media screen and (max-width: 768px) {
     body {
         background-size: 50%; 
     }
 
     header {
-        position: static; /* Essencial para o menu não cobrir os produtos no celular */
+        position: static;
     }
 
     main {
@@ -367,10 +367,10 @@ h1 {
     }
 
     nav {
-        flex-direction: column; /* Faz logo, botões e busca virarem uma lista vertical */
+        flex-direction: column; 
         padding: 20px;
         gap: 15px;
-        flex-wrap: wrap; /* AGORA PERMITE QUEBRA DE LINHA SE NECESSÁRIO */
+        flex-wrap: wrap; 
     }
 
     .logo {
@@ -389,9 +389,9 @@ h1 {
 
     .links a {
         margin: 5px 0;
-        width: 100%; /* Botões ocupam a largura total da tela do celular */
+        width: 100%; 
         text-align: center;
-        padding: 12px 20px; /* Reduz o recuo exagerado que vinha do PC */
+        padding: 12px 20px; 
     }
 
     .pesquisabusca-container {
@@ -407,9 +407,9 @@ h1 {
         margin: 20px auto;
     }
 
-    /* CORREÇÃO DOS QUADRADOS BRANCOS */
+   
     .produtos {
-        grid-template-columns: 1fr !important; /* FORÇA 1 PRODUTO POR LINHA */
+        grid-template-columns: 1fr !important; 
         width: 100%;
         padding: 0 20px;
         gap: 25px;
@@ -417,13 +417,13 @@ h1 {
 
     .doces {
         width: 100%;
-        max-width: 340px; /* Define um tamanho limite bonito para o card não esticar até as bordas */
-        margin: 0 auto;  /* Centraliza o card na tela do celular */
+        max-width: 340px; 
+        margin: 0 auto;  
         min-height: auto; 
     }
 
     .doces img {
-        height: 280px; /* Ajusta a proporção da imagem para não achatar */
+        height: 280px;
     }
     
     .nome-produto {
@@ -431,7 +431,7 @@ h1 {
         font-size: 18px;
     }
 
-    /* CORREÇÃO DO RODAPÉ */
+    
     .rodape {
         flex-direction: column; 
         align-items: center;
