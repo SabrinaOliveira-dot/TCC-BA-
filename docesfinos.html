@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./docesfinos.css">
+    <link rel="stylesheet" href="./busca.css">
     <link rel="shortcut icon" href="./Imagens/Design-sem-nome.ico" type="image/x-icon">
 
     <title>Império dos Bolos, Doces e Salgados</title>
@@ -17,83 +18,85 @@
 <body>
     <header>
         <nav>
-                <a href="./index.html">
-                    <div class="logo">
-                        <img src="./Imagens/Logo confeitaria.png" alt="logo">
-                    </div>
-                </a>
-    
-                <div class="links">
-                    <a href="./index.html"> Loja </a>
-                    <a href="./catalogos.html"> Catálogo </a>
-                    <a href="./sobremim.html"> Sobre mim </a>
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="./Imagens/Logo confeitaria.png" alt="logo">
                 </div>
-    
-                <form class="busca pesquisabusca-container">
-                    <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
-                    <input type="text" placeholder="O que você está buscando?">
-                </form>
+            </a>
+
+            <div class="links">
+                <a href="./index.html"> Loja </a>
+                <a href="./catalogos.html"> Catálogo </a>
+                <a href="./sobremim.html"> Sobre mim </a>
+            </div>
+
+            <form id="form-busca" class="busca pesquisabusca-container">
+                <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
+                <input type="text" id="busca" placeholder="Buscar produto..." autocomplete="off">
+                <ul id="sugestoes" class="sugestoes-off">
+                </ul>
+            </form>
         </nav>
     </header>
 
     <main>
-    <h1>Doces Finos</h1>
+        <h1>Doces Finos</h1>
 
-    <section class="opcoes">
-        <div class="produtos">
-            
-            <div class="doces">
-                <img class="imagem" src="./Imagens/bem.casado.jfif" alt="doce-bem-casado">
-                <h2 class="nome-produto">Bem Casados</h2> 
+        <section class="opcoes">
+            <div class="produtos">
 
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar alguns Bem Casados."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
+                <div class="doces" id="bem-casado">
+                    <img class="imagem" src="./Imagens/bem.casado.jfif" alt="doce-bem-casado">
+                    <h2 class="nome-produto">Bem Casados</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar alguns Bem Casados."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="macarons">
+                    <img class="imagem" src="./Imagens/macarons.jpg" alt="macarons">
+                    <h2 class="nome-produto">Macarons </h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar alguns Macarons."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="surpresa-de-uva">
+                    <img class="imagem" src="./Imagens/surpresa de uva doces finos.jpg" alt="Surpresa de uva">
+                    <h2 class="nome-produto">Surpresa de uva</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar algumas Surpresas de Uvas."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="trufa-de-chocolate">
+                    <img class="imagem" src="./Imagens/trufa.jfif" alt="trufa-de-chocolate">
+                    <h2 class="nome-produto">Trufa de chocolate</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar algumas trufas de chocolate."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido
+                    </a>
+                </div>
+
+                <div class="doces" id="camafue">
+                    <img class="imagem" src="./Imagens/camafue.jfif" alt="camafue">
+                    <h2 class="nome-produto">Camafue</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar alguns camafues."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="copinhos-de-chocolate">
+                    <img class="imagem" src="./Imagens/copinho.jfif" alt="copinho-de-chocolate">
+                    <h2 class="nome-produto">Copinhos de Chocolate</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar alguns copinhos de chocolate."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
             </div>
-
-            <div class="doces">
-                <img class="imagem" src="./Imagens/macarons.jpg" alt="macarons">
-                <h2 class="nome-produto">Macarons </h2>
-                
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar alguns Macarons."
-                   target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-            <div class="doces">
-                <img class="imagem" src="./Imagens/surpresa de uva doces finos.jpg" alt="Surpresa de uva">
-                <h2 class="nome-produto">Surpresa de uva</h2>
-                
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar algumas Surpresas de Uvas."
-                   target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-             <div class="doces">
-                <img class="imagem" src="./Imagens/trufa.jfif" alt="trufa-de-chocolate">
-                <h2 class="nome-produto">Trufa de chocolate</h2>
-                
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar algumas trufas de chocolate."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido
-                </a>
-            </div>
-
-            <div class="doces">
-                <img class="imagem" src="./Imagens/camafue.jfif" alt="camafue">
-                <h2 class="nome-produto">Camafue</h2>
-                
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar alguns camafues."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-            <div class="doces">
-                <img class="imagem" src="./Imagens/copinho.jfif" alt="copinho-de-chocolate">
-                <h2 class="nome-produto">Copinhos de Chocolate</h2>
-                
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar alguns copinhos de chocolate."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
 
     <footer class="rodape">
@@ -126,5 +129,8 @@
             <p>Domingo: Fechado</p>
         </div>
     </footer>
-    </body>
+
+    <script src="script.js"></script>
+</body>
+
 </html>

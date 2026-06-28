@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./catalogos.css"> <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./busca.css">
     <link rel="shourtcut icon" href="./Imagens/Design-sem-nome.ico" type="imagem/x-icon">
     <!-- Link para o ícone da página -->
     <title>Império dos Bolos, Doces e Salgados</title>
@@ -12,79 +13,84 @@
 
 <body>
 
- <header>
-    <nav>
-        <a href="./index.html">
-            <div class="logo">
-                <img src="./Imagens/Logo confeitaria.png" alt="logo">
+    <header>
+        <nav>
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="./Imagens/Logo confeitaria.png" alt="logo">
+                </div>
+            </a>
+
+            <div class="links">
+                <a href="./index.html"> Loja </a>
+                <a href="./catalogos.html"> Catálogo </a>
+                <a href="./sobremim.html"> Sobre mim </a>
             </div>
-        </a>
 
-        <div class="links">
-            <a href="./index.html"> Loja </a>
-            <a href="./catalogos.html"> Catálogo </a>
-            <a href="./sobremim.html"> Sobre mim </a>
-        </div>
+            <form id="form-busca" class="busca pesquisabusca-container">
+                <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
+                <input type="text" id="busca" placeholder="Buscar produto..." autocomplete="off">
+                <ul id="sugestoes" class="sugestoes-off">
+                </ul>
+            </form>
+        </nav>
 
-        <form class="busca pesquisabusca-container">
-            <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
-            <input type="text" placeholder="O que você está buscando?">
-        </form>
-    </nav>
-    
     </header>
 
-    
+
     <main> <!-- Conteúdo principal -->
-      
-          <h1> Catalogos</h1>
+
+        <h1> Catalogos</h1>
 
         <section class="catalogos">
-          
+
             <div class="produtos">
-            <div class="produto">
-               <a href="./brigadeiros.html"> <img class="brigadeiro e brigadeiro-e-beijinhos" src="./Imagens/brigadeiro.jfif"
-                    alt="brigadeiro-e-beijinhos"></a>
-                <h2 class="nome-produto">Doces para festas</h2>
-                
-            </div>
+                <div class="produto">
+                    <a href="./brigadeiros.html"> <img class="brigadeiro e brigadeiro-e-beijinhos"
+                            src="./Imagens/brigadeiro.jfif" alt="brigadeiro-e-beijinhos"></a>
+                    <h2 class="nome-produto">Doces para festas</h2>
 
-            <div class="produto">
-               <a href="./boloscaseiros.html"> <img class="caseiros" src="./Imagens/BOLO CACEIRO.jpg"
-                    alt="bolos-caseiros"></a>
-                <h2 class="nome-produto">Bolos caseiros</h2>
-                
-            </div>
+                </div>
 
-            <div class="produto">
-                <a href="./boloscobertura.html"> <img class="cobertura" src="./Imagens/bolo de maracuja.jpeg" alt="bolos-com-cobertura"></a>
-                <h2 class="nome-produto">Bolos com cobertura</h2>
-                
-            </div>
+                <div class="produto">
+                    <a href="./boloscaseiros.html"> <img class="caseiros" src="./Imagens/BOLO CACEIRO.jpg"
+                            alt="bolos-caseiros"></a>
+                    <h2 class="nome-produto">Bolos caseiros</h2>
 
-            <div class="produto">
-               <a href="./salgados.html"> <img class="salgados" src="./Imagens/mini coxinhas.png" alt="salgados"></a> 
-                <h2 class="nome-produto">Salgados</h2>
-                
+                </div>
+
+                <div class="produto">
+                    <a href="./boloscobertura.html"> <img class="cobertura" src="./Imagens/bolo de maracuja.jpeg"
+                            alt="bolos-com-cobertura"></a>
+                    <h2 class="nome-produto">Bolos com cobertura</h2>
+
+                </div>
+
+                <div class="produto">
+                    <a href="./salgados.html"> <img class="salgados" src="./Imagens/mini coxinhas.png"
+                            alt="salgados"></a>
+                    <h2 class="nome-produto">Salgados</h2>
+
+                </div>
+                <div class="produto">
+                    <a href="./geladinhos.html"> <img class="gelinhos" src="./Imagens/gelinho morango.jpeg"
+                            alt="gelinhos"></a>
+                    <h2 class="nome-produto">Geladinhos</h2>
+
+                </div>
+                <div class="produto">
+                    <a href="./docesfinos.html"> <img class="finos" src="./Imagens/macarons.jpg" alt="doces-finos"></a>
+                    <h2 class="nome-produto">Doces finos</h2>
+
+                </div>
             </div>
-            <div class="produto">
-                <a href="./geladinhos.html"> <img class="gelinhos" src="./Imagens/gelinho morango.jpeg" alt="gelinhos"></a>
-                <h2 class="nome-produto">Geladinhos</h2>
-                
-            </div>
-            <div class="produto">
-                <a href="./docesfinos.html"> <img class="finos" src="./Imagens/macarons.jpg" alt="doces-finos"></a>
-                <h2 class="nome-produto">Doces finos</h2>
-                
-            </div>
-        </div>
         </section>
     </main>
 
 
 
 
-   <footer class="rodape"> <!--É a barra do meu rodapé-->
+    <footer class="rodape"> <!--É a barra do meu rodapé-->
 
         <div class="logorodape-principal"> <!--Essa aqui é da minha barra-->
             <img class="logorodape" src="./Imagens/Logo confeitaria.png" alt="logo">
@@ -116,6 +122,8 @@
             <p>Domingo: Fechado</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

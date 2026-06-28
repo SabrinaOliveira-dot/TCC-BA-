@@ -1,0 +1,50 @@
+#form-busca {
+    position: relative;
+    width: 300px;
+}
+
+#busca {
+    width: 100%;
+    padding: 10px;
+}
+
+#sugestoes {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #692004;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    z-index: 30;
+    top: calc(100% + 5px);
+    left: 0;
+    transition: max-height 0.3s ease;
+}
+
+.sugestoes-off {
+    display: none;
+    opacity: 0;
+}
+
+.sugestoes-on {
+    display: block;
+    opacity: 1;
+}
+
+#sugestoes li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#sugestoes li{
+    transition: all 0.3s ease;
+}
+
+#sugestoes li:hover {
+    background: #b3595a;
+    color: #ffffff;
+}

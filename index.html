@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./busca.css">
     <link rel="shortcut icon" href="./Imagens/Design-sem-nome.ico" type="image/x-icon">
 
     <title>Império dos Bolos, Doces e Salgados</title>
@@ -29,11 +30,11 @@
                 <a href="./sobremim.html"> Sobre mim </a>
             </div>
 
-            <form class="busca pesquisabusca-container">
+            <form id="form-busca" class="busca pesquisabusca-container">
                 <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
-                <input list="produtos-busca" type="text" placeholder="O que você está buscando?">
-                
-                
+                <input type="text" id="busca" placeholder="Buscar produto..." autocomplete="off">
+                <ul id="sugestoes" class="sugestoes-off">
+                </ul>
             </form>
         </nav>
     </header>

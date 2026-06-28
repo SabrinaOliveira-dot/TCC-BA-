@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./sobremim.css">
+    <link rel="stylesheet" href="./busca.css">
     <link rel="shortcut icon" href="./Imagens/Design-sem-nome.ico" type="image/x-icon">
 
     <title>Império dos Bolos, Doces e Salgados</title>
@@ -29,9 +30,11 @@
                 <a href="./sobremim.html"> Sobre mim </a>
             </div>
 
-            <form class="busca pesquisabusca-container">
+            <form id="form-busca" class="busca pesquisabusca-container">
                 <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
-                <input type="text" placeholder="O que você está buscando?">
+                <input type="text" id="busca" placeholder="Buscar produto..." autocomplete="off">
+                <ul id="sugestoes" class="sugestoes-off">
+                </ul>
             </form>
         </nav>
     </header>
@@ -50,15 +53,17 @@
                     <h1>Conheça a minha história</h1>
                     <div class="historia-texto">
                         <p> Olá, meu nome é Tamires e estou a 17 anos trabalhando na aréa da confeitaria.
-                            
-                           <p> Nasci em Escada, cidade localizada em Pernambuco, foi na minha terra natal que me apaioxonei pela aréa,  através da convivência com minha ex-cunhada, que já atuava profissionalmente na área.</p>
+
+                        <p> Nasci em Escada, cidade localizada em Pernambuco, foi na minha terra natal que me apaioxonei
+                            pela aréa, através da convivência com minha ex-cunhada, que já atuava profissionalmente na
+                            área.</p>
 
                         <p> Sempre tive interesse em aprender cada vez mais sobre essa área.</p>
                         <p>Com o passar do tempo, a confeitaria deixou de ser apenas um interesse e se tornou uma
                             verdadeira paixão. Mesmo sem realizar cursos profissionalizantes, eu desenvolvi minhas
                             habilidades através da prática, da experiência e da dedicação constante ao meu trabalho.</p>
                         <p>Fui aprimorando minhas técnicas e conquistando experiência na produção de bolos, doces e
-                            salgados para diferentes ocasiões.  trabalho passou a ser reconhecido pela dedicação,
+                            salgados para diferentes ocasiões. trabalho passou a ser reconhecido pela dedicação,
                             pelo cuidado nos detalhes e pelo carinho presente em cada produção.</p>
                     </div>
                 </section>
@@ -113,6 +118,8 @@
             <p>Domingo: Fechado</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

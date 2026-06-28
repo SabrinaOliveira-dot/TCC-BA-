@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./boloscobertura.css">
+    <link rel="stylesheet" href="./busca.css">
     <link rel="shortcut icon" href="./Imagens/Design-sem-nome.ico" type="image/x-icon">
 
     <title>Império dos Bolos, Doces e Salgados</title>
@@ -29,70 +30,76 @@
                 <a href="./sobremim.html"> Sobre mim </a>
             </div>
 
-            <form class="busca pesquisabusca-container">
+            <form id="form-busca" class="busca pesquisabusca-container">
                 <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
-                <input type="text" placeholder="O que você está buscando?">
+                <input type="text" id="busca" placeholder="Buscar produto..." autocomplete="off">
+                <ul id="sugestoes"></ul>
             </form>
         </nav>
     </header>
 
     <main>
-    <h1> Bolos com cobertura</h1>
+        <h1> Bolos com cobertura</h1>
 
-    <section class="opcoes">
-        <div class="produtos">
-            
-            <div class="doces">
-                <img class="imagem" src="./Imagens/bolo de laranja.jpeg" alt="Bolo de laranja com cobertura de laranja">
-                <h2 class="nome-produto">Bolo de laranja com cobertura de ninho</h2> 
+        <section class="opcoes">
+            <div class="produtos">
 
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de laranja com cobertura."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
+                <div class="doces" id="bolo-de-laranja-com-cobertura-de-ninho">
+                    <img class="imagem" src="./Imagens/bolo de laranja.jpeg"
+                        alt="Bolo de laranja com cobertura de laranja">
+                    <h2 class="nome-produto">Bolo de laranja com cobertura de ninho</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de laranja com cobertura."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="bolo-de-cenoura-com-cobertura-de-chocolate">
+                    <img class="imagem" src="./Imagens/bolo de coco com cobertura de chocolate.jpeg"
+                        alt="Bolo de cenoura com cobertura de chocolate">
+                    <h2 class="nome-produto">Bolo de cenoura com cobertura de chocolate</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de cenoura com cobertura de chocolate."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="bolo-de-maracuja-com-cobertura-de-maracuja">
+                    <img class="imagem" src="./Imagens/bolo de maracuja.jpeg"
+                        alt="Bolo de maracuja com cobertura de maracuja">
+                    <h2 class="nome-produto"> Bolo de maracuja com cobertura de maracujá</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de maracuja com cobertura de maracuja."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="bolo-de-chocolate-com-cobertura-de-chocolate">
+                    <img class="imagem" src="./Imagens/bolo de chocolate com cobertura de chocolate.jpeg"
+                        alt="Bolo de chocolate com cobertura de chocolate">
+                    <h2 class="nome-produto">Bolo de chocolate com cobertura de chocolate</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de chocolate com conbertura de chocolate."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="bolo-de-coco-ao-leite-com-cobertura-de-pacoca">
+                    <img class="imagem" src="./Imagens/bolo de paçoca.jpeg" alt="Bolo de coco com cobertura de paçoca">
+                    <h2 class="nome-produto">Bolo de coco ao leite com cobertura de paçoca </h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar um Bolo de coco com cobertura de paçoca."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="bolo-de-coco-com-cobertura-de-leite-ninho">
+                    <img class="imagem" src="./Imagens/bolo de leite ninho.jpeg"
+                        alt="Bolo de coco com cobertura de leite ninho">
+                    <h2 class="nome-produto">Bolo de coco com cobertura de leite ninho</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar um Bolo de coco com cobertura de paçoca."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
             </div>
-
-            <div class="doces">
-                <img class="imagem" src="./Imagens/bolo de coco com cobertura de chocolate.jpeg" alt="Bolo de cenoura com cobertura de chocolate">
-                <h2 class="nome-produto">Bolo de cenoura com cobertura de chocolate</h2>
-                
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de cenoura com cobertura de chocolate."
-                   target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-            <div class="doces">
-                <img class="imagem" src="./Imagens/bolo de maracuja.jpeg" alt="Bolo de maracuja com cobertura de maracuja">
-                <h2 class="nome-produto"> Bolo de maracuja com cobertura de maracujá</h2>
-                
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de maracuja com cobertura de maracuja."
-                   target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-             <div class="doces">
-                <img class="imagem" src="./Imagens/bolo de chocolate com cobertura de chocolate.jpeg" alt="Bolo de chocolate com cobertura de chocolate">
-                <h2 class="nome-produto">Bolo de chocolate com cobertura de chocolate</h2>
-                
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar Bolo de chocolate com conbertura de chocolate."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-           <div class="doces">
-                <img class="imagem" src="./Imagens/bolo de paçoca.jpeg" alt="Bolo de coco com cobertura de paçoca">
-                <h2 class="nome-produto">Bolo de coco ao leite com cobertura de paçoca </h2>
-                
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar um Bolo de coco com cobertura de paçoca."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-             <div class="doces">
-                <img class="imagem" src="./Imagens/bolo de leite ninho.jpeg" alt="Bolo de coco com cobertura de leite ninho">
-                <h2 class="nome-produto">Bolo de coco com cobertura de leite ninho</h2>
-                
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar um Bolo de coco com cobertura de paçoca."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
 
     <footer class="rodape">
@@ -125,5 +132,8 @@
             <p>Domingo: Fechado</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

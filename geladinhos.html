@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./geladinhos.css">
+    <link rel="stylesheet" href="./busca.css">
     <link rel="shortcut icon" href="./Imagens/Design-sem-nome.ico" type="image/x-icon">
 
     <title>Império dos Bolos, Doces e Salgados</title>
@@ -29,71 +30,73 @@
                 <a href="./sobremim.html"> Sobre mim </a>
             </div>
 
-            <form class="busca pesquisabusca-container">
+            <form id="form-busca" class="busca pesquisabusca-container">
                 <img src="./Imagens/lupa.png" alt="Lupa" class="icone-lupa">
-                <input type="text" placeholder="O que você está buscando?">
+                <input type="text" id="busca" placeholder="Buscar produto..." autocomplete="off">
+                <ul id="sugestoes" class="sugestoes-off">
+                </ul>
             </form>
         </nav>
     </header>
 
     <main>
-    <h1>Geladinhos</h1>
+        <h1>Geladinhos</h1>
 
-    <section class="opcoes">
-        <div class="produtos">
-            
-            <div class="doces">
-                <img class="imagem" src="./Imagens/gelinho de paçoca.png" alt="Paçoca">
-                <h2 class="nome-produto">Geladinhos de Paçoca</h2> 
+        <section class="opcoes">
+            <div class="produtos">
 
-                <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar geladinhos de paçoca."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
+                <div class="doces" id="geladinho-de-pacoca">
+                    <img class="imagem" src="./Imagens/gelinho de paçoca.png" alt="Paçoca">
+                    <h2 class="nome-produto">Geladinhos de Paçoca</h2>
+
+                    <a href="https://wa.me/558191528525?text=Olá! Gostaria de encomendar geladinhos de paçoca."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="geladinho-de-chocolate">
+                    <img class="imagem" src="./Imagens/gelinho de chocolate.jpg" alt="Geladinho de chocolate">
+                    <h2 class="nome-produto">Geladinho de chocolate </h2>
+
+                    <a href="https://wa.me/558191528525?text= Olá! Gostaria de geladinho de chocolate." target="_blank"
+                        target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="geladinho-de-morango">
+                    <img class="imagem" src="./Imagens/gelinho morango.jpeg" alt="Geladinho de morango">
+                    <h2 class="nome-produto">Geladinho de morango</h2>
+
+                    <a href="https://wa.me/558191528525?text= Olá! Gostaria de geladinho de morango." target="_blank"
+                        target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="geladinho-de-maracuja">
+                    <img class="imagem" src="./Imagens/gelinho maracuja.jpeg" alt="Geladinho de maracujá">
+                    <h2 class="nome-produto">Geladinhos de maracujá</h2>
+
+                    <a href="https://wa.me/558191528525?text= Olá! Gostaria de encomendar geladinhos de maracujá."
+                        target="_blank" target="_blank" class="botao-pedido">Fazer pedido
+                    </a>
+                </div>
+
+                <div class="doces" id="geladinho-de-manga">
+                    <img class="imagem" src="./Imagens/gelinho de manga.jpg" alt="Geladinho de manga">
+                    <h2 class="nome-produto">Geladinho de manga</h2>
+
+                    <a href="https://wa.me/558191528525?text= Olá! Gostaria de geladinho de manga." target="_blank"
+                        target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
+                <div class="doces" id="geladinho-de-coco">
+                    <img class="imagem" src="./Imagens/geladinho de coco.jpg" alt=" Geladinho de coco">
+                    <h2 class="nome-produto">Geladinho de coco</h2>
+
+                    <a href="https://wa.me/558191528525?text= Olá! Gostaria de geladinho coco" target="_blank"
+                        target="_blank" class="botao-pedido">Fazer pedido</a>
+                </div>
+
             </div>
-
-            <div class="doces">
-                <img class="imagem" src="./Imagens/gelinho de chocolate.jpg" alt="Geladinho de chocolate">
-                <h2 class="nome-produto">Geladinho de chocolate </h2>
-                
-                <a href="https://wa.me/558191528525?text= Olá! Gostaria de geladinho de chocolate."
-                   target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-            <div class="doces">
-                <img class="imagem" src="./Imagens/gelinho morango.jpeg" alt="Geladinho de morango">
-                <h2 class="nome-produto">Geladinho de morango</h2>
-                
-                <a href="https://wa.me/558191528525?text= Olá! Gostaria de geladinho de morango."
-                   target="_blank" target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-             <div class="doces">
-                <img class="imagem" src="./Imagens/gelinho maracuja.jpeg" alt="Geladinho de maracujá">
-                <h2 class="nome-produto">Geladinhos de maracujá</h2>
-                
-                <a href="https://wa.me/558191528525?text= Olá! Gostaria de encomendar geladinhos de maracujá."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido
-                </a>
-            </div>
-
-            <div class="doces">
-                <img class="imagem" src="./Imagens/gelinho de manga.jpg" alt="Geladinho de manga">
-                <h2 class="nome-produto">Geladinho de manga</h2>
-                
-                <a href="https://wa.me/558191528525?text= Olá! Gostaria de geladinho de manga."
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-            <div class="doces">
-                <img class="imagem" src="./Imagens/geladinho de coco.jpg" alt=" Geladinho de coco">
-                <h2 class="nome-produto">Geladinho de coco</h2>
-                
-                <a href="https://wa.me/558191528525?text= Olá! Gostaria de geladinho coco"
-                   target="_blank"target="_blank" class="botao-pedido">Fazer pedido</a>
-            </div>
-
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
 
     <footer class="rodape">
@@ -126,5 +129,8 @@
             <p>Domingo: Fechado</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
