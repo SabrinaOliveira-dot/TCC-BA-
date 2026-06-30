@@ -169,7 +169,7 @@ nav {
     /* Largura da barra de pesquisa */
 }
 
-/* Campo de entrada (input) da pesquisa */
+
 .pesquisabusca-container input {
     flex: 1;
     /* Faz o input ocupar todo o espaço restante do container */
@@ -182,7 +182,6 @@ nav {
     color: #ffffff;
     /* Cor do texto digitado em branco */
     font-size: 16px;
-    /* Tamanho do texto confortável para leitura */
 }
 
 .pesquisabusca-container input::placeholder {
